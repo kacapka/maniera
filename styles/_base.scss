@@ -1,15 +1,27 @@
 @font-face {
-	font-family: "ZillaSlab-Medium";
-	src: url("/static/ZillaSlab-Medium.woff") format("woff");
+	font-family: "NocturneSerif-Regular";
+	src: url("/static/NocturneSerif-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: "NocturneSerif-RegularItalic";
+	src: url("/static/NocturneSerif-RegularItalic.woff") format("woff");
+}
+@font-face {
+	font-family: "RobotoMono-Medium";
+	src: url("/static/RobotoMono-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: "RobotoMono-Regular";
+	src: url("/static/RobotoMono-Regular.woff") format("woff");
 }
 
 body,
 html {
 	margin: 0;
 	padding: 0;
-	font-family: "azo-sans-web", sans-serif;
-	color: $main;
-	font-weight: 400;
+	font-family: "NocturneSerif-Regular", serif;
+	color: #000;
+	// font-weight: 400;
 	font-size: 16px;
 }
 
@@ -26,16 +38,16 @@ a {
 	outline: none;
 }
 
-*::-webkit-scrollbar-track {
-	background-color: transparent;
-}
+// *::-webkit-scrollbar-track {
+// 	background-color: transparent;
+// }
 
-*::-webkit-scrollbar {
-	width: 5px;
-	background-color: transparent;
-}
+// *::-webkit-scrollbar {
+// 	width: 5px;
+// 	background-color: transparent;
+// }
 
-*::-webkit-scrollbar-thumb {
-	background-color: #636e72;
-	border-radius: 2px;
-}
+// *::-webkit-scrollbar-thumb {
+// 	background-color: #636e72;
+// 	border-radius: 2px;
+// }

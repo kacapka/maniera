@@ -1,10 +1,6 @@
-@import "./vars";
+@import "./_vars";
 @import "./_base.scss";
-@import "./mixins";
+@import "./_fonts.scss";
 @import "./_layout.scss";
+@import "./_main.scss";
 @import "./_hero.scss";
-@import "./_services.scss";
-@import "./_prices.scss";
-@import "./_contact.scss";
-@import "./_footer.scss";
-@import "./_modal.scss";
