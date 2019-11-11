@@ -1,7 +1,9 @@
 const Hero = () => {
 	return (
 		<section className="section">
-			<div className="hero">hero</div>
+			<div className="hero">
+				<h1>Maniera nail + face bar</h1>
+			</div>
 		</section>
 	);
 };
