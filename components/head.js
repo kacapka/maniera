@@ -16,7 +16,7 @@ const Head = props => (
 			content="Stomatologia zachowawcza, chirurgia, implantologia, protetyka i periondontologia. Zapraszamy do naszego gabinetu, Legionowo ul. Jagielońska 5a."
 		/>
 
-		<link
+		{/* <link
 			rel="apple-touch-icon"
 			sizes="180x180"
 			href="/static/apple-touch-icon.png"
@@ -32,7 +32,7 @@ const Head = props => (
 			type="image/png"
 			sizes="16x16"
 			href="/static/favicon-16x16.png"
-		/>
+		/> */}
 		<link rel="canonical" href="https://www.drseroka.pl/" />
 		<link rel="manifest" href="/static/site.webmanifest"></link>
 		<meta property="og:image:width" content="1200" />
@@ -43,19 +43,11 @@ const Head = props => (
 			content="https://stomatologia.s3.eu-central-1.amazonaws.com/services_img.png"
 		/>
 
-		<meta
-			property="og:description"
-			content="Zadbamy o Twój piękny i zdrowy uśmiech!"
-		/>
+		<meta property="og:description" content="Maniera" />
 
 		<meta property="og:url" content="https://www.drseroka.pl/" />
 
 		<meta property="og:title" content="Stomatologia dr Anita Seroka" />
-
-		<link
-			rel="stylesheet"
-			href="https://use.typekit.net/tys8kdf.css"
-		></link>
 	</NextHead>
 );
 

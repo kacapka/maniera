@@ -1,0 +1,21 @@
+.hero {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #dcccb4;
+	&-text {
+		@extend %noc-regular;
+		font-size: 35px;
+		line-height: 60px;
+		text-align: center;
+		&--italic {
+			@extend %noc-italic;
+		}
+		&__top {
+			margin-bottom: 25px;
+		}
+	}
+}
