@@ -1,0 +1,17 @@
+.hands {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B5C7D8;
+    &-image {
+        width: 550px;
+        height: 550px;
+        background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_hands.JPG');
+        background-position: 52% 20%;
+        background-size: 260%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+}

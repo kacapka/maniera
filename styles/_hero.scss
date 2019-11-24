@@ -6,16 +6,17 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #dcccb4;
+	padding: 150px 0;
 	&-text {
 		@extend %noc-regular;
-		font-size: 35px;
-		line-height: 60px;
+		font-size: 55px;
+		line-height: 81px;
 		text-align: center;
 		&--italic {
 			@extend %noc-italic;
 		}
 		&__top {
-			margin-bottom: 25px;
+			margin-bottom: 75px;
 		}
 	}
 }

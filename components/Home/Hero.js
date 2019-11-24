@@ -3,21 +3,13 @@ const Hero = () => {
 		<section className="section">
 			<div className="hero">
 				<p className="hero-text hero-text__top">
-					Witaj w Manièrze, <br />
-					u nas poczujesz się jakbyś wstąpiła
-					<br />
-					do mieszkania swojej przyjaciółki,
-					<br />a mogła{" "}
-					<span className="hero-text--italic">
-						zrelaksować się jak w spa
-					</span>
-					<br />
-					połączonym z ulubionym wine barem.
+					Poczuj się jak w mieszkaniu przyjaciółki, <br />
+					odpręż się w dziewczyńskiej atmosferze <br />
+					i zrelaksuj jak w SPA przy kieliszku prosecco.
 				</p>
 				<p className="hero-text hero-text__bottom">
-					Tworzymy miejsce spotkań jak żadne inne.
-					<br />
-					Odwiedź nas z przyjaciółką, siostrą, mamą lub mężem.
+					<span className="hero-text--italic">Odwiedź Manièrę</span> <br />
+					z przyjaciółką, mamą, siostrą, lub mężem.
 				</p>
 			</div>
 		</section>

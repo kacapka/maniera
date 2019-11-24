@@ -7,6 +7,10 @@ import Main from "./Main";
 import Nav from "../Nav";
 import Services from "./Services";
 import Pricing from "./Pricing";
+import Wine from "./Wine";
+import Nails from "./Nails";
+import Hands from "./Hands";
+import Team from "./Team";
 
 const Home = () => {
 	return (
@@ -14,15 +18,20 @@ const Home = () => {
 			<Nav />
 			<ReactFullpage
 				navigation
+				controlArrows={false}
 				// onLeave={this.onLeave.bind(this)}
 				// sectionsColor={this.state.sectionsColor}
-				render={comp =>
+				render={({ state, fullpageApi }) =>
 					console.log("render prop change") || (
 						<ReactFullpage.Wrapper>
 							<Main />
 							<Hero />
 							<Services />
 							<Pricing />
+							<Wine />
+							<Nails />
+							<Hands />
+							<Team />
 							<Instagram />
 							<Footer />
 						</ReactFullpage.Wrapper>

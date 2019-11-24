@@ -1,11 +1,16 @@
 import Link from "next/link";
 
-const LinkBox = ({ link, text }) => {
+const LinkBox = ({ link, text, internal }) => {
 	return (
 		<div className="link-box">
-			<Link href={link}>
-				<a>{text}</a>
-			</Link>
+			{internal ? (
+				<Link href={link}>
+					<a>{text}</a>
+				</Link>
+			) : (
+					<a href={link} target="_blank">{text}</a>
+				)}
+
 		</div>
 	);
 };
