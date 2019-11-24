@@ -2,4 +2,39 @@
     width: 100%;
     height: 100%;
     background: #B5C7D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-photo {
+        background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_magda.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 0 0 490px;
+        width: 490px;
+        height: 570px;
+        margin-right: 50px;
+    }
+    &-info {
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 50px;
+        &__name {
+            @extend %robo-medium;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+        &__role {
+            @extend %noc-italic;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        &__desc {
+            @extend %noc-regular;
+            font-size: 25px;
+            line-height: 40px;
+        }
+    }
 }

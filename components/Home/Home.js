@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Hero from "./Hero";
 import Instagram from "./Instagram";
-import Footer from "./Footer";
 import Main from "./Main";
 import Nav from "../Nav";
 import Services from "./Services";
@@ -11,6 +10,8 @@ import Wine from "./Wine";
 import Nails from "./Nails";
 import Hands from "./Hands";
 import Team from "./Team";
+import Phone from "./Phone";
+import Contact from "./Contact";
 
 const Home = () => {
 	return (
@@ -18,7 +19,7 @@ const Home = () => {
 			<Nav />
 			<ReactFullpage
 				navigation
-				controlArrows={false}
+				// controlArrows={false}
 				// onLeave={this.onLeave.bind(this)}
 				// sectionsColor={this.state.sectionsColor}
 				render={({ state, fullpageApi }) =>
@@ -32,8 +33,9 @@ const Home = () => {
 							<Nails />
 							<Hands />
 							<Team />
+							<Phone />
+							<Contact />
 							<Instagram />
-							<Footer />
 						</ReactFullpage.Wrapper>
 					)
 				}
