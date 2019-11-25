@@ -1,200 +1,206 @@
 const PRICES = [
 	{
-		title: "STOMATOLOGIA ZACHOWAWCZA",
+		title: "Pielęgnacja rąk i stóp",
 		prices: [
 			{
-				name: "przegląd 1 wizyta",
-				price: "30"
+				name: "Uzupełnienie Rzęsy 1:1",
+				price: "200 zł"
 			},
 			{
-				name: "konsultacja + recepta",
-				price: "50"
+				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
+				price: "230 zł"
 			},
 			{
-				name: "znieczulenie",
-				price: "20"
+				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
+				price: "270 zł"
 			},
 			{
-				name: "zdjęcie RVG",
-				price: "20"
+				name: "Uzupełnienie Rzęsy Metoda Big Volume",
+				price: "270 - 360 zł"
 			},
 			{
-				name: "lak 1 ząb",
-				price: "70"
+				name: "Założenie Rzęs 1:1",
+				price: "250 zł"
 			},
 			{
-				name: "lapis 1 wizyta",
-				price: "50"
+				name: "Założenie Rzęsy 2:1 / 3:1",
+				price: "280 zł"
 			},
 			{
-				name: "kiretaż",
-				price: "70"
+				name: "Założenie Rzęsy 4:1 / 5:1",
+				price: "300 zł"
 			},
 			{
-				name: "wybielanie 2 łuki",
-				price: "1100"
+				name: "Założenie Rzęsy Metoda Big Volume",
+				price: "320 - 400 zł"
 			},
 			{
-				name: "wybielanie zęba martwego 1 wizyta",
-				price: "50"
-			},
-			{
-				name: "wypełnienie zęba mlecznego",
-				price: "100 - 140"
-			},
-			{
-				name: "wypełnienie zęba stałego",
-				price: "120 - 190"
-			},
-			{
-				name: "kompozytowa odbudowa szkliwa",
-				price: "300"
-			},
-			{
-				name: "odbudowa na włóknie szklanym",
-				price: "470 - 490"
-			},
-			{
-				name: "opatrunek tymczasowy",
-				price: "50 - 70"
-			},
-			{
-				name: "kanałowe leczenie zęba",
-				price: "320 - 660"
-			},
-			{
-				name: "czyszczenie małe (piaskowanie)",
-				price: "120"
-			},
-			{
-				name: "czyszczenie duże (piaskowanie+scaling)",
-				price: "180"
-			},
-			{
-				name: "czyszczenie małe 1 łuk",
-				price: "70"
-			},
-			{
-				name: "czyszczenie duże 1 luk",
-				price: "90"
-			},
-			{
-				name: "fluoryzacja",
-				price: "100"
-			},
-			{
-				name: "czyszczenie + fluoryzacja (zęby mleczne)",
-				price: "140"
-			},
-			{
-				name: "czyszczenie duże + fluoryzacja",
-				price: "250"
+				name: "Zdjęcie rzęs",
+				price: "50 zł"
 			}
 		]
 	},
 	{
-		title: "CHIRURGIA",
+		title: "Stylizacja rzęs i brwi",
 		prices: [
 			{
-				name: "porada chirurgiczna",
-				price: "30 - 60"
+				name: "Uzupełnienie Rzęsy 1:1",
+				price: "200 zł"
 			},
 			{
-				name: "płukanie ropnia",
-				price: "50"
+				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
+				price: "230 zł"
 			},
 			{
-				name: "nacięcie ropnia",
-				price: "60"
+				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
+				price: "270 zł"
 			},
 			{
-				name: "ekstrakcja chirurgiczna zęba",
-				price: "120 - 190"
+				name: "Uzupełnienie Rzęsy Metoda Big Volume",
+				price: "270 - 360 zł"
 			},
 			{
-				name: "ekstrakcja zęba mlecznego",
-				price: "70 - 120"
+				name: "Założenie Rzęs 1:1",
+				price: "250 zł"
 			},
 			{
-				name: "dłutowanie zęba zatrzymanego",
-				price: "290 - 350"
+				name: "Założenie Rzęsy 2:1 / 3:1",
+				price: "280 zł"
 			},
 			{
-				name: "implant",
-				price: "2990"
+				name: "Założenie Rzęsy 4:1 / 5:1",
+				price: "300 zł"
 			},
 			{
-				name: "kontrola implantologiczna",
-				price: "200"
+				name: "Założenie Rzęsy Metoda Big Volume",
+				price: "320 - 400 zł"
 			},
 			{
-				name: "rewizja implantologiczna",
-				price: "250 - 350"
+				name: "Zdjęcie rzęs",
+				price: "50 zł"
 			}
 		]
 	},
 	{
-		title: "PROTETYKA",
+		title: "Założenie i uzupełnienie rzęs",
 		prices: [
 			{
-				name: "korona tymczasowa",
-				price: "50 - 80"
+				name: "Uzupełnienie Rzęsy 1:1",
+				price: "200 zł"
 			},
 			{
-				name: "zacementowanie jednej korony",
-				price: "60"
+				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
+				price: "230 zł"
 			},
 			{
-				name: "zdjęcie korony protetycznej 1 punkt",
-				price: "70"
+				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
+				price: "270 zł"
 			},
 			{
-				name: "naprawa płyty protezy 1 punkt",
-				price: "100"
+				name: "Uzupełnienie Rzęsy Metoda Big Volume",
+				price: "270 - 360 zł"
 			},
 			{
-				name: "podścielenie płyty protezy w gabinecie",
-				price: "150"
+				name: "Założenie Rzęs 1:1",
+				price: "250 zł"
 			},
 			{
-				name: "podścielenie płyty protezy w pracowni",
-				price: "200"
+				name: "Założenie Rzęsy 2:1 / 3:1",
+				price: "280 zł"
 			},
 			{
-				name: "modele diagnostyczne",
-				price: "80"
+				name: "Założenie Rzęsy 4:1 / 5:1",
+				price: "300 zł"
 			},
 			{
-				name: "wkład koronowo-korzeniowy",
-				price: "500"
+				name: "Założenie Rzęsy Metoda Big Volume",
+				price: "320 - 400 zł"
 			},
 			{
-				name: "korona akryl laboratoryjny",
-				price: "300"
+				name: "Zdjęcie rzęs",
+				price: "50 zł"
+			}
+		]
+	},
+	{
+		title: "Pielęgnacja twarzy",
+		prices: [
+			{
+				name: "Uzupełnienie Rzęsy 1:1",
+				price: "200 zł"
 			},
 			{
-				name: "korona stal porcelanowa",
-				price: "800"
+				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
+				price: "230 zł"
 			},
 			{
-				name: "korona pełnoceramiczna",
-				price: "1600"
+				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
+				price: "270 zł"
 			},
 			{
-				name: "licówka pełnoceramiczna",
-				price: "1500"
+				name: "Uzupełnienie Rzęsy Metoda Big Volume",
+				price: "270 - 360 zł"
 			},
 			{
-				name: "proteza acetylowa",
-				price: "1900"
+				name: "Założenie Rzęs 1:1",
+				price: "250 zł"
 			},
 			{
-				name: "szyna relaksacyjna miękka",
-				price: "300"
+				name: "Założenie Rzęsy 2:1 / 3:1",
+				price: "280 zł"
 			},
 			{
-				name: "szyna relaksacyjna twarda",
-				price: "400"
+				name: "Założenie Rzęsy 4:1 / 5:1",
+				price: "300 zł"
+			},
+			{
+				name: "Założenie Rzęsy Metoda Big Volume",
+				price: "320 - 400 zł"
+			},
+			{
+				name: "Zdjęcie rzęs",
+				price: "50 zł"
+			}
+		]
+	},
+	{
+		title: "Makijaż permanentny",
+		prices: [
+			{
+				name: "Uzupełnienie Rzęsy 1:1",
+				price: "200 zł"
+			},
+			{
+				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
+				price: "230 zł"
+			},
+			{
+				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
+				price: "270 zł"
+			},
+			{
+				name: "Uzupełnienie Rzęsy Metoda Big Volume",
+				price: "270 - 360 zł"
+			},
+			{
+				name: "Założenie Rzęs 1:1",
+				price: "250 zł"
+			},
+			{
+				name: "Założenie Rzęsy 2:1 / 3:1",
+				price: "280 zł"
+			},
+			{
+				name: "Założenie Rzęsy 4:1 / 5:1",
+				price: "300 zł"
+			},
+			{
+				name: "Założenie Rzęsy Metoda Big Volume",
+				price: "320 - 400 zł"
+			},
+			{
+				name: "Zdjęcie rzęs",
+				price: "50 zł"
 			}
 		]
 	}

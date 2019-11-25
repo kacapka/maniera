@@ -63,7 +63,7 @@ const Footer = () => {
 			<div className="footer-authors">
 				<p className="footer-authors__text">realizacja:</p>
 				<div>
-					<a href="https://www.instagram.com/dominika_suszek/" target="_blank" className="footer-authors__text">Domi.Suszek</a>
+					<a href="https://www.instagram.com/domi.suszek/" target="_blank" className="footer-authors__text">Domi.Suszek</a>
 					<a href="" target="_blank" className="footer-authors__text">J.Gostkiewicz</a>
 					<a href="https://www.instagram.com/_kacapka/" target="_blank" className="footer-authors__text">W.Urbański</a>
 				</div>

@@ -5,12 +5,19 @@ import "../styles/index.scss";
 import { Fragment } from "react";
 
 import Head from "../components/head";
+import PricingHero from "../components/Pricing/PricingHero";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import PricingContent from "../components/Pricing/PricingContent";
 
 export default () => {
 	return (
 		<Fragment>
 			<Head title="Cennik" />
-			<div>cennik</div>
+			<Nav />
+			<PricingHero />
+			<PricingContent />
+			<Footer />
 		</Fragment>
 	);
 };
