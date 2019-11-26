@@ -29,11 +29,11 @@
 	max-height: 0;
 	&--open {
 		max-height: 5000px;
-		transition: max-height 1s ease-in-out;
+		transition: all 1s ease-in-out;
 	}
 	&--close {
 		max-height: 0;
-		transition: max-height 1s ease-in-out;
+		transition: all 1s ease-in-out;
 	}
 }
 
