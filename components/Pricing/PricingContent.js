@@ -5,7 +5,7 @@ import PricingItem from './PriceItem';
 const PricingContent = () => {
     const renderPrices = () => {
         return PRICES.map(price => {
-            return <PricingItem item={price} key={price.title} />
+            return <PricingItem {...price} key={price.title} />
         });
     };
 
@@ -15,7 +15,7 @@ const PricingContent = () => {
             <div className="pricing-wrapper">
                 {renderPrices()}
             </div>
-            <LinkBox text='zarezerwuj wizytę' href="https://www.moment.pl/maniera-nail-bar" internal='false' />
+            <LinkBox text='zarezerwuj wizytę' link="https://www.moment.pl/maniera-nail-bar" internal={false} className="pricing-button" />
         </section>
     )
 };

@@ -2,6 +2,7 @@
 	width: 680px;
 	height: 60px;
 	border: 2px solid #000;
+	cursor: pointer;
 	a {
 		@extend %robo-medium;
 		color: #000;
@@ -20,5 +21,39 @@
 		a {
 			color: #dcccb4;
 		}
+	}
+}
+
+.collapse {
+	overflow: hidden;
+	max-height: 0;
+	&--open {
+		max-height: 5000px;
+		transition: max-height 1s ease-in-out;
+	}
+	&--close {
+		max-height: 0;
+		transition: max-height 1s ease-in-out;
+	}
+}
+
+.link-inner {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&__default,
+	&__hover {
+		display: block;
+		height: 100%;
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+		-o-transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+	}
+	&__hover {
+		position: absolute;
+		bottom: 100%;
 	}
 }

@@ -15,6 +15,14 @@
             margin-bottom: 15px;
             a {
                 color: #DCCCB4;
+                &:hover {
+					.link-inner__default {
+						transform: translateY(100%);
+					}
+					.link-inner__hover {
+						transform: translateY(100%);
+					}
+				}
             }
         }
     }

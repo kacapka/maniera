@@ -1,20 +1,18 @@
 $width: 866px;;
 
-.pricing {
+.faq {
     &-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #E9E4D8;
+        background: #473B4D;
         padding: 120px 0;
+        color: #DCCCB4;
     }
     &-title {
         @extend %noc-italic;
         font-size: 45px;
         margin-bottom: 15px;
-    }
-    &-button {
-        width: $width;
     }
     &-wrapper {
         width: $width;
@@ -22,9 +20,9 @@ $width: 866px;;
         flex-direction: column;
     }
     &-item {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #DCCCB4;
         width: 100%;
-        padding: 0 50px;
+        padding: 0 20px;
         &__title {
             @extend %noc-regular;
             font-size: 25px;
@@ -37,16 +35,12 @@ $width: 866px;;
                 @extend %noc-italic;    
             }
         }
-        &__wrapper {
+        &__answer {
             @extend %noc-regular;
             font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            &:last-of-type {
-                margin-bottom: 50px;
-            }
+            line-height: 26px;
+            margin-bottom: 50px;
+            text-align: center;
         }
     }
 }

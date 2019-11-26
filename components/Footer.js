@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InnerLink from "./InnerLink";
 
 const Footer = () => {
 	return (
@@ -9,7 +10,7 @@ const Footer = () => {
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
-						UMÓW WIZYTĘ
+						<InnerLink text='UMÓW WIZYTĘ' />
 					</a>
 				</li>
 				{/* <li>
@@ -19,12 +20,16 @@ const Footer = () => {
 				</li> */}
 				<li>
 					<Link href="/pricing">
-						<a>CENNIK</a>
+						<a>
+							<	InnerLink text='CENNIK' />
+						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/faq">
-						<a>FAQ</a>
+						<a>
+							<InnerLink text='FAQ' />
+						</a>
 					</Link>
 				</li>
 			</ul>
@@ -40,7 +45,7 @@ const Footer = () => {
 						href="https://www.instagram.com/manieranailbar/?hl=pl"
 						target="_blank"
 					>
-						Instagram
+						<InnerLink text='Instagram' />
 					</a>
 				</li>
 				<li>
@@ -48,7 +53,7 @@ const Footer = () => {
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
-						Facebook
+						<InnerLink text='Facebook' />
 					</a>
 				</li>
 				<li>
@@ -56,7 +61,7 @@ const Footer = () => {
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
-						Pinterest
+						<InnerLink text='Pinterest' />
 					</a>
 				</li>
 			</ul>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InnerLink from "./InnerLink";
 
 const Nav = () => {
 	return (
@@ -9,17 +10,21 @@ const Nav = () => {
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
-						UMÓW WIZYTĘ
+						<InnerLink text='UMÓW WIZYTĘ' />
 					</a>
 				</li>
 				<li>
 					<Link href="/pricing">
-						<a>CENNIK</a>
+						<a>
+							<InnerLink text='CENNIK' />
+						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/faq">
-						<a>FAQ</a>
+						<a>
+							<InnerLink text='FAQ' />
+						</a>
 					</Link>
 				</li>
 			</ul>

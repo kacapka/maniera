@@ -13,7 +13,7 @@ import PricingContent from "../components/Pricing/PricingContent";
 export default () => {
 	return (
 		<Fragment>
-			<Head title="Cennik" />
+			<Head title="Meniera - Cennik" />
 			<Nav />
 			<PricingHero />
 			<PricingContent />
