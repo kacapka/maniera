@@ -3,7 +3,7 @@ import LinkBox from "../LinkBox";
 const Pricing = () => {
 	return (
 		<section className="section">
-			<div className="pricing">
+			<div className="main-pricing">
 				<div className="pricing-wrapper">
 					<svg viewBox="0 0 500 500" className="pricing-image">
 						<path
