@@ -10,15 +10,11 @@ const Services = () => {
 							Stylizacja paznokci
 						</h3>
 						<p className="services-item__desc">
-							Wykonujemy stylistykę paznokci <br />
+							Wykonujemy stylistykę paznokci
 							naturalnych oraz przedłużanych.
-							<br />
 							U nas umówisz się na manicure japoński,
-							<br />
 							SPA, a także hybrydowy i żelowy.
-							<br />
 							Możesz być pewna, że używamy produktów
-							<br />
 							najwyższej jakości.
 						</p>
 					</div>
@@ -29,9 +25,9 @@ const Services = () => {
 						</h3>
 						<p className="services-item__desc">
 							Oferujemy przedłużanie rzęs metodami
-							<br /> 1:1, 2:1 oraz objętościowymi big volume.
-							<br /> Połóż się wygodnie i pozwól naszym
-							<br /> stylistkom działać cuda.
+							1:1, 2:1 oraz objętościowymi big volume.
+							Połóż się wygodnie i pozwól naszym
+							stylistkom działać cuda.
 						</p>
 					</div>
 					<div className="services-item">
@@ -41,10 +37,9 @@ const Services = () => {
 						</h3>
 						<p className="services-item__desc">
 							Nasz gabinet kosmetyczny oferuje gamę
-							<br /> zabiegów pielęgnacyjnych przy użyciu
-							<br /> luksusowych preparatów marki Sothys,
-							<br /> a także urządzeń najnowszej generacji
-							<br />
+							zabiegów pielęgnacyjnych przy użyciu
+							luksusowych preparatów marki Sothys,
+							a także urządzeń najnowszej generacji
 							Hydrafacial oraz Geneo+.
 						</p>
 					</div>

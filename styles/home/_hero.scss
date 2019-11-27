@@ -19,3 +19,15 @@
 		}
 	}
 }
+
+@media all and (max-width: 1366px) {
+	.hero {
+		&-text {
+			font-size: 45px;
+			line-height: 75px;
+			&__top {
+				margin-bottom: 70px;
+			}
+		}
+	}	
+}

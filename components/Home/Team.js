@@ -9,9 +9,9 @@ const Team = () => {
                     <p className="team-info__name">MAGDALENA</p>
                     <p className="team-info__role">Główna konspiratorka</p>
                     <p className="team-info__desc">
-                        Zawsze trochę zaganiana i roztargniona, <br />
-                        ale z ręką na pulsie. Ma milion pomysłów <br />
-                        na minutę, uwielbia wyzwania, a przy tym <br />
+                        Zawsze trochę zaganiana i roztargniona,
+                        ale z ręką na pulsie. Ma milion pomysłów
+                        na minutę, uwielbia wyzwania, a przy tym
                         wszystkim towarzyszy jej słodki piesek Tony.
                     </p>
                 </div>

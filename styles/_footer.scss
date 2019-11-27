@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media all and (max-width: 1366px) {
+    .footer {
+        padding: 40px 0;
+        &-list {
+            list-style: none;
+            margin: 0 80px;
+        }
+        &-authors {
+            display: flex;
+            writing-mode: none;
+            text-orientation: initial;
+            writing-mode: initial;
+            right: 50%;
+            top:  calc(100% - 25px);
+            transform: translateX(50%);
+        }
+    }     
+}

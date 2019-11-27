@@ -1,29 +1,31 @@
 @import "./_vars";
 @import "./_base.scss";
 @import "./_fonts.scss";
-@import "./_layout.scss";
 @import "./_nav.scss";
-@import "./_main.scss";
-@import "./_hero.scss";
-@import "./_services.scss";
-@import "./_pricing.scss";
-@import "./_wine.scss";
-@import "./_nails.scss";
-@import "./_hands.scss";
-@import "./_team.scss";
-@import "./_phone.scss";
-@import "./_contact.scss";
 @import "./_footer.scss";
-@import "./_instagram.scss";
+
+//home
+@import "./home/_main.scss";
+@import "./home/_hero.scss";
+@import "./home/_services.scss";
+@import "./home/_pricing.scss";
+@import "./home/_wine.scss";
+@import "./home/_nails.scss";
+@import "./home/_hands.scss";
+@import "./home/_team.scss";
+@import "./home/_phone.scss";
+@import "./home/_contact.scss";
+@import "./home/_instagram.scss";
 
 //pricing
-@import "./_pricingHero.scss";
-@import "./_pricingContent.scss";
+@import "./pricing/_pricingHero.scss";
+@import "./pricing/_pricingContent.scss";
 
 //faq
-@import "./_faqHero.scss";
-@import "./_faqContent.scss";
+@import "./faq/_faqHero.scss";
+@import "./faq/_faqContent.scss";
 
 //layout
 @import "./layout/_button.scss";
+@import "./layout/_layout.scss";
 

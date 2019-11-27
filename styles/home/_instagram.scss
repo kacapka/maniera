@@ -40,3 +40,11 @@
         }
     }
 }
+
+@media all and (max-width: 1366px) {
+    .instagram {
+        &-title {
+            margin-bottom: 40px;
+        }
+    }      
+}

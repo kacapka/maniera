@@ -43,10 +43,27 @@
 	}
 }
 
-
-
-text {
-	fill: #000;
-	@extend %robo-regular;
-	font-size: 30px;
+@media all and (max-width: 1366px) {
+	.main-pricing {
+		&-image {
+			width: 400px;
+			height: 400px;
+		}
+		&-wrapper {
+			margin-bottom: 50px;
+		}
+		&-text {
+			&__title {
+				// font-size: 40px;
+				// line-height: 60px;
+				// padding-bottom: 20px;
+				// margin-bottom: 20px;
+				// border-bottom: 4px solid #000;
+			}
+			&__wow {
+				// font-size: 30px;
+				// text-align: right;
+			}
+		}
+	}	
 }

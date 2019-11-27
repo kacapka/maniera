@@ -42,12 +42,27 @@
 			@extend %noc-regular;
 			text-align: center;
 			font-size: 15px;
-			line-height: 24px;
+			line-height: 26px;
 		}
 	}
 	&-info {
 		@extend %noc-regular;
 		font-size: 15px;
 		letter-spacing: 1px;
+	}
+}
+
+@media all and (max-width: 1366px) {
+	.services {
+		&-wrapper {
+			margin-bottom: 40px;
+		}
+		&-item {
+			width: 280px;
+			margin: 0 20px;
+			&__desc {
+				padding: 0 25px;
+			}
+		}
 	}
 }

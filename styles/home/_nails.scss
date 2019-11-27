@@ -13,7 +13,7 @@
 		margin-bottom: 50px;
 	}
 	&-subtitle {
-		@extend %noc-regular;
+		@extend %noc-italic;
 		font-size: 45px;
 		margin-bottom: 85px;
 	}
@@ -33,4 +33,17 @@
 			margin: 0 65px;
 		}
 	}
+}
+
+@media all and (max-width: 1366px) {
+	.nails {
+		&-title {
+			margin-bottom: 40px;
+		}
+		&-wrapper {
+			&__vl {
+				margin: 0 50px;
+			}
+		}
+	}	
 }
