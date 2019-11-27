@@ -37,12 +37,13 @@
 			text-align: right;
 		}
 	}
+	&__image {
+		width: 450px;
+		height: 450px;
+	}
 }
 
-svg {
-	width: 450px;
-	height: 450px;
-}
+
 
 text {
 	fill: #000;

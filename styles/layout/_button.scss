@@ -1,0 +1,57 @@
+.button-wrapper {
+	position: relative;
+    width: 680px;
+    height: 60px;
+    &__text {
+        @extend %robo-medium;
+        color: #000;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .shape1,
+    .shape2 {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;  
+        stroke-dasharray: 1480;
+        stroke-width: 5px;
+        fill: transparent;
+        stroke: #000;
+        transition-timing-function: linear;
+        transition: stroke-dashoffset 3s, stroke-dasharray 3s;
+    }
+    .shape1 {
+        stroke-dashoffset: -1480;
+    }
+    .shape2 {
+        stroke-dashoffset: 1480;
+    }
+    &--light {
+        .button-wrapper__text {
+            color: #dcccb4;
+            border-color: #dcccb4;
+        } 
+        .shape1,
+        .shape2 {
+            stroke: #dcccb4;
+        }  
+    }
+}
+
+.button-wrapper:hover .shape1,
+.button-wrapper:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1480;
+}

@@ -14,14 +14,14 @@ const Nav = () => {
 					</a>
 				</li>
 				<li>
-					<Link href="/pricing">
+					<Link href="/pricing" prefetch>
 						<a>
 							<InnerLink text='CENNIK' />
 						</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/faq">
+					<Link href="/faq" prefetch>
 						<a>
 							<InnerLink text='FAQ' />
 						</a>
