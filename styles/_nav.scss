@@ -26,3 +26,18 @@ nav {
 		}
 	}
 }
+
+@media all and (max-width: 1024px) {
+	nav {
+		top: 45px;
+		left: 45px;
+		ul {
+			li {
+				a {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+

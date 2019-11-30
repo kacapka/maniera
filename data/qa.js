@@ -16,7 +16,7 @@ const QA = [
         a: 'Jeżeli nie jesteś fanką manicure hybrydowego, a potrzebujesz żeby Twój lakier utrzymywał się dłużej, polecamy Manicure Vinylux. Marka lakierów do paznokci CND stworzyła lakiery, które mają na celu pozostać na Twoich dłoniach dłużej, utrzymując lekkość manicure klasycznego.'
     },
     {
-        q: 'akie są zalety manicure japońskiego?',
+        q: 'Jakie są zalety manicure japońskiego?',
         a: 'Jeżeli nie jesteś fanką manicure hybrydowego, a potrzebujesz żeby Twój lakier utrzymywał się dłużej, polecamy Manicure Vinylux. Marka lakierów do paznokci CND stworzyła lakiery, które mają na celu pozostać na Twoich dłoniach dłużej, utrzymując lekkość manicure klasycznego.'
     },
     {

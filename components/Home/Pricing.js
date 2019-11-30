@@ -1,6 +1,13 @@
-import LinkBox from "../LinkBox";
+import { LinkBox, LinkBoxMobile } from "../LinkBox";
+import useMedia from '../MediaQuery/MediaQuery';
 
 const Pricing = () => {
+	const { isMobile } = useMedia();
+	const buttonProps = {
+		link: "/pricing",
+		text: "sprawdź nasze ceny",
+		internal: true
+	}
 	return (
 		<section className="section">
 			<div className="main-pricing">
@@ -21,7 +28,7 @@ const Pricing = () => {
 						<p className="main-pricing-text__wow">wow!</p>
 					</div>
 				</div>
-				<LinkBox link="/pricing" text="sprawdź nasze ceny" internal />
+				{isMobile ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
 			</div>
 		</section>
 	);

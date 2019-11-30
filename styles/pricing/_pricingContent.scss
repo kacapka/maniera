@@ -55,3 +55,27 @@ $width: 866px;;
 @media all and (max-width: 1366px) {
 
 }
+
+@media all and (max-width: 1024px) {
+    $width: 620px;;
+
+    .pricing {
+        &-content {
+            padding: 80px 0;
+        }
+        &-title {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+        &-button {
+            margin-top: 60px;
+            width: $width;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            padding: 0;
+        }
+    }    
+}

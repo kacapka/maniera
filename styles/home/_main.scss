@@ -39,3 +39,18 @@
 		}
 	}
 }
+
+@media all and (max-width: 1024px) {
+	.main {
+		padding: 0 0 60px 0;
+		&-title {
+			font-size: 100px;
+			line-height: 85px;
+			margin-left: 0;
+			align-self: center;
+			&__bottom {
+				margin-left: 85px;
+			}
+		}
+	}		
+}

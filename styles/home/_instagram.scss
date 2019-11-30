@@ -48,3 +48,23 @@
         }
     }      
 }
+
+@media all and (max-width: 1024px) {
+    .instagram {
+        &-title {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+        &-text {
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+        &-photos {
+            &__item {
+                width: 180px;
+                height: 180px;
+                margin: 0 10px;
+            }
+        }
+    }    
+}

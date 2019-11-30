@@ -1,7 +1,15 @@
-import LinkBox from "../LinkBox";
+import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import nail from "../../static/nail.png";
+import useMedia from '../MediaQuery/MediaQuery';
 
 const Nails = () => {
+    const { isMobile } = useMedia();
+
+    const buttonProps = {
+        link: "https://www.moment.pl/maniera-nail-bar",
+        text: "zarezerwuj wizytę",
+        internal: false
+    }
     return (
         <section className="section">
             <div className="nails">
@@ -15,12 +23,16 @@ const Nails = () => {
                     <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
                     <div className="nails-wrapper__vl" />
                     <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
-                    <div className="nails-wrapper__vl" />
-                    <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
-                    <div className="nails-wrapper__vl" />
-                    <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
+                    {!isMobile && (
+                        <>
+                            <div className="nails-wrapper__vl" />
+                            <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
+                            <div className="nails-wrapper__vl" />
+                            <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
+                        </>
+                    )}
                 </div>
-                <LinkBox link="https://www.moment.pl/maniera-nail-bar" text="zarezerwuj wizytę" internal={false} />
+                {isMobile ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
             </div>
         </section>
     );

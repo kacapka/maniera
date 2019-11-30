@@ -31,3 +31,17 @@
 		}
 	}	
 }
+
+@media all and (max-width: 1024px) {
+	.hero {
+		&-text {
+			max-width: 660px;
+			font-size: 35px;
+			line-height: 64px;
+			text-align: center;
+			&__top {
+				margin-bottom: 50px;
+			}
+		}
+	}	
+}

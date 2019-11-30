@@ -43,3 +43,30 @@
 @media all and (max-width: 1366px) {
       
 }
+
+@media all and (max-width: 1024px) {
+    .contact {
+        &-info {
+            margin-bottom: 35px;
+            &__text {
+                font-size: 31px;
+                margin-bottom: 10px;
+            }
+            &__address {
+                font-size: 31px;
+                margin-bottom: 10px;
+            }
+            &__phone {
+                font-size: 31px;
+                margin-bottom: 30px;
+            }
+        }
+        &-faq {
+            margin-top: 35px;
+            &__text {
+                font-size: 31px;
+                margin-bottom: 30px;
+            }
+        }
+    }    
+}

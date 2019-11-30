@@ -5,14 +5,14 @@ import classnames from 'classnames';
 const ButtonInner = ({ text }) => (
 	<Fragment>
 		<svg height="60" width="680" xmlns="http://www.w3.org/2000/svg">
-			<rect class="shape1" height="60" width="680" />
-			<rect class="shape2" height="60" width="680" />
+			<rect className="shape1" height="60" width="680" />
+			<rect className="shape2" height="60" width="680" />
 		</svg>
-		<div class="button-wrapper__text">{text}</div>
+		<div className="button-wrapper__text">{text}</div>
 	</Fragment>
 );
 
-const LinkBox = ({ link, text, internal, isLight, className }) => {
+export const LinkBox = ({ link, text, internal, isLight, className }) => {
 	const linkClassName = classnames("button-wrapper", className, { "button-wrapper--light": isLight });
 
 	return internal ? (
@@ -28,4 +28,18 @@ const LinkBox = ({ link, text, internal, isLight, className }) => {
 		)
 };
 
-export default LinkBox;
+export const LinkBoxMobile = ({ link, text, internal, isLight, className }) => {
+	const linkClassName = classnames("mobile-button-wrapper", className, { "mobile-button-wrapper--light": isLight });
+
+	return internal ? (
+		<Link href={link}>
+			<a className={linkClassName}>
+				{text}
+			</a>
+		</Link>
+	) : (
+			<a href={link} target="_blank" className={linkClassName}>
+				{text}
+			</a>
+		)
+};

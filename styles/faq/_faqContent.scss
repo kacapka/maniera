@@ -44,3 +44,29 @@ $width: 866px;;
         }
     }
 }
+
+@media all and (max-width: 1024px) {
+    $width: 620px;;
+
+    .faq {
+        &-content {
+            padding: 80px 0;
+        }
+        &-title {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 20px;
+                height: 90px;
+            }
+            &__answer {
+                margin-bottom: 30px;
+            }
+        }
+    }   
+}
