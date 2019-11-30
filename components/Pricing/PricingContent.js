@@ -4,7 +4,7 @@ import PricingItem from './PriceItem';
 import useMedia from '../MediaQuery/MediaQuery';
 
 const PricingContent = () => {
-    const { isMobile } = useMedia();
+    const { isMobileOrTablet } = useMedia();
     const renderPrices = () => {
         return PRICES.map(price => {
             return <PricingItem {...price} key={price.title} />
@@ -24,7 +24,7 @@ const PricingContent = () => {
             <div className="pricing-wrapper">
                 {renderPrices()}
             </div>
-            {isMobile ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+            {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
         </section>
     )
 };

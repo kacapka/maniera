@@ -70,3 +70,73 @@
         }
     }    
 }
+
+@media all and (max-width: 767px) {
+    .contact {
+        padding: 120px 0;
+        &-info {
+            margin-bottom: 70px;
+            &__text {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+            &__address {
+                font-size: 30px;
+                margin-bottom: 20px;
+                width: 270px;
+                text-align: center;
+                line-height: 45px;
+            }
+            &__phone {
+                width: 350px;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 50px;
+                line-height: 45px;
+            }
+        }
+        &-faq {
+            margin-top: 0;
+            &__text {
+                width: 400px;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 50px;
+                line-height: 45px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .contact {
+        padding: 60px 0 100px 0;
+        &-info {
+            margin-bottom: 50px;
+            &__text {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            &__address {
+                font-size: 20px;
+                margin-bottom: 15px;
+                width: 180px;
+                line-height: 35px;
+            }
+            &__phone {
+                width: 250px;
+                font-size: 20px;
+                margin-bottom: 25px;
+                line-height: 35px;
+            }
+        }
+        &-faq {
+            &__text {
+                width: 265px;
+                font-size: 20px;
+                margin-bottom: 25px;
+                line-height: 35px;
+            }
+        }
+    }     
+}

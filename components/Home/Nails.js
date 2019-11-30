@@ -3,11 +3,11 @@ import nail from "../../static/nail.png";
 import useMedia from '../MediaQuery/MediaQuery';
 
 const Nails = () => {
-    const { isMobile } = useMedia();
+    const { isMobileOrTablet } = useMedia();
 
     const buttonProps = {
         link: "https://www.moment.pl/maniera-nail-bar",
-        text: "zarezerwuj wizytę",
+        text: "umów wizytę",
         internal: false
     }
     return (
@@ -21,10 +21,10 @@ const Nails = () => {
                     <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
                     <div className="nails-wrapper__vl" />
                     <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
-                    <div className="nails-wrapper__vl" />
-                    <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
-                    {!isMobile && (
+                    {!isMobileOrTablet && (
                         <>
+                            <div className="nails-wrapper__vl" />
+                            <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
                             <div className="nails-wrapper__vl" />
                             <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
                             <div className="nails-wrapper__vl" />
@@ -32,7 +32,7 @@ const Nails = () => {
                         </>
                     )}
                 </div>
-                {isMobile ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+                {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
             </div>
         </section>
     );

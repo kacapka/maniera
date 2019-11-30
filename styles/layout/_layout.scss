@@ -50,6 +50,22 @@
 	}	
 }
 
+@media all and (max-width: 767px) {
+	.app-logo {
+		top: 50px;
+		width: 255px;
+		height: 80px;
+	}		
+}
+
+@media all and (max-width: 500px) {
+	.app-logo {
+		top: 35px;
+		width: 142px;
+		height: 44px;
+	}		
+}
+
 
 
 

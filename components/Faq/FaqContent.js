@@ -10,7 +10,7 @@ const FaqContent = () => {
 
     return (
         <section className="faq-content">
-            <h2 className="faq-title">Faq</h2>
+            <h2 className="faq-title">Najcześciej zadawane pytania</h2>
             <div className="faq-wrapper">
                 {renderQA()}
             </div>

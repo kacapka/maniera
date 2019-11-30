@@ -33,13 +33,13 @@ const Footer = () => {
 					</Link>
 				</li>
 			</ul>
-			<ul className="footer-list">
+			<ul className="footer-list footer-list--address">
 				<li>Maniera Nail & Spa Bar</li>
 				<li>Mokotowska 39, Warszawa</li>
 				<li>tel. 22 628 39 39</li>
 			</ul>
 			<ul className="footer-list">
-				<li>FOLLOW US</li>
+				<li className="footer-list__follow">FOLLOW US</li>
 				<li>
 					<a
 						href="https://www.instagram.com/manieranailbar/?hl=pl"
@@ -66,10 +66,10 @@ const Footer = () => {
 				</li>
 			</ul>
 			<div className="footer-authors">
-				<p className="footer-authors__text">realizacja:</p>
+				<p className="footer-authors__text">realizacja: {" "}</p>
 				<div>
-					<a href="https://www.instagram.com/domi.suszek/" target="_blank" className="footer-authors__text">Domi.Suszek</a>
-					<a href="" target="_blank" className="footer-authors__text">J.Gostkiewicz</a>
+					<a href="https://www.instagram.com/domi.suszek/" target="_blank" className="footer-authors__text">Domi.Suszek </a>
+					<a href="" target="_blank" className="footer-authors__text">J.Gostkiewicz </a>
 					<a href="https://www.instagram.com/_kacapka/" target="_blank" className="footer-authors__text">W.Urbański</a>
 				</div>
 			</div>

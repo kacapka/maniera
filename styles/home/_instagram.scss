@@ -68,3 +68,35 @@
         }
     }    
 }
+
+@media all and (max-width: 767px) {
+    .instagram {
+        &-text {
+            width: 280px;
+            text-align: center;
+        }
+        &-photos {
+            margin-bottom: 75px;
+            &__item {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .instagram {
+        &-title {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-size: 22px;
+            width: 100%;
+        }
+        &-photos {
+            margin-bottom: 40px;
+        }
+    }    
+}

@@ -54,7 +54,7 @@ $width: 866px;;
         }
         &-title {
             font-size: 35px;
-            margin-bottom: 0;
+            margin-bottom: 40px;
         }
         &-wrapper {
             width: $width;
@@ -69,4 +69,55 @@ $width: 866px;;
             }
         }
     }   
+}
+
+@media all and (max-width: 767px) {
+    $width: 400px;
+
+    .faq {
+        &-title {
+            text-align: center;
+            width: 330px;
+            font-size: 35px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            padding: 0;
+            &__title {
+                padding: 0 20px;
+                text-align: center;
+                height: 140px;
+            }
+        }
+    } 
+}
+
+@media all and (max-width: 500px) {
+    $width: 100%;
+
+
+    .faq {
+        &-content {
+            padding: 80px 20px;
+        }
+        &-title {
+            width: 240px;
+            font-size: 22px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            padding: 0;
+            &__title {
+                font-size: 15px;
+                height: 100px;
+            }
+            &__answer  {
+                padding: 0 20px;
+            }
+        }
+    }    
 }

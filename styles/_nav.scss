@@ -41,3 +41,9 @@ nav {
 	}
 }
 
+@media all and (max-width: 767px) {
+	nav {
+		display: none;
+	}
+}
+

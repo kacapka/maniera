@@ -2,7 +2,7 @@ import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import useMedia from '../MediaQuery/MediaQuery';
 
 const Contact = () => {
-    const { isMobile } = useMedia();
+    const { isMobileOrTablet } = useMedia();
     const buttonPropsTop = {
         link: "https://www.moment.pl/maniera-nail-bar",
         text: "REZERWACJA ONLINE",
@@ -23,11 +23,11 @@ const Contact = () => {
                     <p className="contact-info__text">Czekamy na Ciebie!</p>
                     <p className="contact-info__address">Mokotowska 39, 00-551 Warszawa</p>
                     <p className="contact-info__phone">Rezerwacja telefoniczna: 22 628 39 39</p>
-                    {isMobile ? <LinkBoxMobile {...buttonPropsTop} /> : <LinkBox {...buttonPropsTop} />}
+                    {isMobileOrTablet ? <LinkBoxMobile {...buttonPropsTop} /> : <LinkBox {...buttonPropsTop} />}
                 </div>
                 <div className="contact-box contact-faq">
                     <p className="contact-faq__text">Z przyjemnością odpowiemy na Twoje pytania. </p>
-                    {isMobile ? <LinkBoxMobile {...buttonPropsBottom} /> : <LinkBox {...buttonPropsBottom} />}
+                    {isMobileOrTablet ? <LinkBoxMobile {...buttonPropsBottom} /> : <LinkBox {...buttonPropsBottom} />}
                 </div>
             </div>
         </section>

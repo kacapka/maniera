@@ -21,16 +21,13 @@
     }
     .shape1,
     .shape2 {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;  
-        stroke-dasharray: 1480;
-        stroke-width: 5px;
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 0;
         fill: transparent;
-        stroke: #000;
-        transition-timing-function: linear;
-        transition: stroke-dashoffset 3s, stroke-dasharray 3s;
+        stroke: #19f6e8;
+        border-bottom: 5px solid black;
+        transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
     }
     .shape1 {
         stroke-dashoffset: -1480;
@@ -50,11 +47,42 @@
     }
 }
 
-.button-wrapper:hover .shape1,
-.button-wrapper:hover .shape2 {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1480;
-}
+// .svg-wrapper {
+//     position: relative;
+//     width: 680px;
+//     height: 60px;  
+// }
+//   .shape {
+//     stroke-dasharray: 1e-05px, 1480px;
+//     stroke-dashoffset: -740;
+//     stroke-width: 0;
+//     fill: transparent;
+//     stroke: #000;
+//     border-bottom: 5px solid black;
+//     transition: stroke-dashoffset 1s, stroke-dasharray 1s;
+//   }
+//   .text {
+//     @extend %robo-medium;
+//     color: #000;
+//     font-size: 25px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 60px;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-transform: uppercase;
+//     border: 1px solid #000;
+//     cursor: pointer;
+//   }
+//   .svg-wrapper:hover .shape {
+//     stroke-width: 4px;
+//     stroke-dashoffset: 0;
+//     stroke-dasharray: 1480px;
+//   }
 
 .mobile-button-wrapper {
     @extend %robo-medium;   
@@ -71,9 +99,120 @@
         color: #000;
         font-size: 18px;
         text-transform: uppercase;
+        letter-spacing: 1px;
         &--light {
             color: #dcccb4;
             border-color: #dcccb4;  
         }
     }  
 }
+
+@media all and (max-width: 767px) {
+    .mobile-button-wrapper {
+        width: 400px;
+        font-size: 15px;
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .mobile-button-wrapper {
+        width: 260px;
+        height: 40px;
+        font-size: 12px;
+    }     
+}
+
+// .app-button {
+// 	width: 680px;
+// 	height: 60px;
+// }
+
+// .app-button span{
+// 	display: block;
+// 	position: relative;
+// 	line-height: 60px;
+// 	height: 60px;
+// 	cursor: pointer;
+// }
+
+// .app-button > span:after{
+// 	content:'';
+// 	position: absolute;
+// 	top:0;
+// 	left: 50%;
+// 	width: 0;
+// 	height: 0;
+	
+// 	border: 2px solid transparent;
+// 	border-left: none;
+// 	border-bottom: none;
+
+//     transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+    
+// }
+
+// .app-button:hover > span:after{
+//     border-color: white;
+// 	width: calc(50% - 1px);
+// 	height: calc(100% - 2px);
+// 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+// }
+
+// .app-button > span:before{
+// 	content:'';
+// 	position: absolute;
+// 	top:0;
+// 	right: 50%;
+// 	width: 0;
+// 	height: 0;
+	
+// 	border: 2px solid white;
+// 	border-right: none;
+// 	border-bottom: none;
+	
+//     transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+// }
+
+// .app-button:hover > span:before{
+//     border-color: white;
+// 	width: calc(50% - 1px);
+// 	height: calc(100% - 2px);
+// 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+// }
+
+// .app-button > span > span:before{
+// 	content:'';
+// 	position: absolute;
+// 	bottom:0;
+// 	right: 0%;
+// 	width: 1px;
+// 	height: 1px;
+// 	opacity: 0;
+	
+// }
+
+// .app-button:hover > span > span:before{
+// 	opacity: 1;
+//     border-bottom: 2px solid white;
+// 	width: calc(50%);
+// 	height: 1px;
+// 	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+// }
+
+// .app-button > span > span:after{
+// 	content:'';
+// 	position: absolute;
+// 	bottom:0;
+// 	left: 0%;
+// 	width: 1px;
+// 	height: 1px;
+// 	opacity: 0;
+// }
+
+// .app-button:hover > span > span:after{
+// 	opacity: 1;
+// 	border-bottom: 2px solid white;
+// 	width: calc(50%);
+// 	height: 2px;
+// 	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+// }

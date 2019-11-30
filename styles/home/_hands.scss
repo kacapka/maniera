@@ -24,3 +24,23 @@
         }
     }    
 }
+
+@media all and (max-width: 767px) {
+    .hands {
+        padding: 150px 0 180px 0;
+        &-image {
+            width: 290px;
+            height: 290px;
+        }
+    }    
+}
+
+@media all and (max-width: 500px) {
+    .hands {
+        padding: 170px 0 220px 0;
+        &-image {
+            width: 225px;
+            height: 225px;
+        }
+    }    
+}

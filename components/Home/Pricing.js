@@ -2,7 +2,7 @@ import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import useMedia from '../MediaQuery/MediaQuery';
 
 const Pricing = () => {
-	const { isMobile } = useMedia();
+	const { isMobileOrTablet } = useMedia();
 	const buttonProps = {
 		link: "/pricing",
 		text: "sprawdź nasze ceny",
@@ -21,14 +21,14 @@ const Pricing = () => {
 					</svg>
 					<div className="main-pricing-text">
 						<h2 className="main-pricing-text__title">
-							MANI + PEDI
-							<br /> WYKONUJEMY
-							<br /> W 60 MINUT.
+							<span className="top">MANI + PEDI</span>
+							<span className="middle">WYKONUJEMY</span>
+							<span className="bottom">W 60 MINUT.</span>
 						</h2>
 						<p className="main-pricing-text__wow">wow!</p>
 					</div>
 				</div>
-				{isMobile ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+				{isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
 			</div>
 		</section>
 	);

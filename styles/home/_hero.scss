@@ -45,3 +45,30 @@
 		}
 	}	
 }
+
+@media all and (max-width: 767px) {
+	.hero {
+		padding: 120px 0;
+		&-text {
+			width: 405px;
+			font-size: 30px;
+			line-height: 55px;
+			&__top {
+				margin-bottom: 50px;
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 500px) {
+	.hero {
+		&-text {
+			width: 260px;
+			font-size: 20px;
+			line-height: 36px;
+			&__top {
+				margin-bottom: 40px;
+			}
+		}
+	}		
+}

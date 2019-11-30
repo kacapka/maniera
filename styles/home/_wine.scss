@@ -6,3 +6,9 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+@media all and (max-width: 767px) {
+	.wine {
+		height: 100vh;
+	}	
+}

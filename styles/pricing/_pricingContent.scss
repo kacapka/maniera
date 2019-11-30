@@ -15,7 +15,7 @@ $width: 866px;;
     }
     &-button {
         margin-top: 75px;
-        width: $width;
+        width: $width !important;
     }
     &-wrapper {
         width: $width;
@@ -69,7 +69,7 @@ $width: 866px;;
         }
         &-button {
             margin-top: 60px;
-            width: $width;
+            width: $width !important;
         }
         &-wrapper {
             width: $width;
@@ -79,3 +79,63 @@ $width: 866px;;
         }
     }    
 }
+
+@media all and (max-width: 767px) {
+    $width: 400px;
+
+    .pricing {
+        &-content {
+            padding: 80px 0 60px 0;
+        }
+        &-title {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+        &-button {
+            width: $width !important;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 20px;
+                height: 100px;
+            }
+            &__wrapper {
+                margin-bottom: 15px;
+                &:last-of-type {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }     
+}
+
+
+@media all and (max-width: 500px) {
+    $width: 100%;
+
+    .pricing {
+        &-content {
+            padding: 50px 20px;
+        }
+        &-title {
+            text-align: center;
+        }
+        &-button {
+            width: $width !important;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__price {
+                flex: 0 0 100px;
+                text-align: right;
+                padding-left: 10px;
+            }
+        }
+    } 
+}
+

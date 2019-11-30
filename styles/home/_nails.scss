@@ -66,3 +66,51 @@
 		}
 	}	
 }
+
+@media all and (max-width: 767px) {
+	.nails {
+		padding: 120px 0;
+		&-title {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		&-subtitle {
+			font-size: 35px;
+			margin-bottom: 60px;
+		}
+		&-wrapper {
+			&__nail {
+				width: 60px;
+				height: 110px;
+			}
+			&__vl {
+				height: 120px;
+				margin: 0 55px;
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 500px) {
+	.nails {
+		&-title {
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+		&-subtitle {
+			font-size: 22px;
+			margin-bottom: px;
+		}
+		&-wrapper {
+			margin-bottom: 80px;
+			&__nail {
+				width: 50px;
+				height: 90px;
+			}
+			&__vl {
+				height: 100px;
+				margin: 0 25px;
+			}
+		}
+	}	
+}

@@ -12,39 +12,44 @@ import Hands from "./Hands";
 import Team from "./Team";
 import Phone from "./Phone";
 import Contact from "./Contact";
-
-// import axios from axios;
-// const access_token = '';
-// const igPath = `https://api.instagram.com/v1/self/media/recent?access_token=${access_token}`;
+import useMedia from "../MediaQuery/MediaQuery";
 
 const Home = () => {
-	// useEffect(() => {
-	// 	axios.get()
-	// }, []);
+	const { isMobile } = useMedia();
+	const components = (
+		<>
+			<Main />
+			<Hero />
+			<Services />
+			<Pricing />
+			<Wine />
+			<Nails />
+			<Hands />
+			<Team />
+			<Phone />
+			<Contact />
+			<Instagram />
+		</>
+	)
 
 	return (
 		<Fragment>
 			<Nav />
-			<ReactFullpage
-				navigation
-				render={({ state, fullpageApi }) =>
-					console.log("render prop change") || (
-						<ReactFullpage.Wrapper>
-							<Main />
-							<Hero />
-							<Services />
-							<Pricing />
-							<Wine />
-							<Nails />
-							<Hands />
-							<Team />
-							<Phone />
-							<Contact />
-							<Instagram />
-						</ReactFullpage.Wrapper>
-					)
-				}
-			/>
+			{isMobile ? components : (
+				<ReactFullpage
+					navigation
+					render={({ state, fullpageApi }) =>
+						console.log("render prop change") || (
+							<ReactFullpage.Wrapper>
+								{components}
+							</ReactFullpage.Wrapper>
+						)
+					}
+				/>
+			)
+
+
+			}
 		</Fragment>
 	);
 };
