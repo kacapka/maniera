@@ -7,7 +7,7 @@ const PricingItem = ({ title, prices }) => {
 
     const renderPrices = () => {
         return prices.map(p => (
-            <div className='pricing-item__wrapper'>
+            <div className='pricing-item__wrapper' key={p.name}>
                 <p className='pricing-item__type'>{p.name}</p>
                 <p className='pricing-item__price'>{p.price}</p>
             </div>

@@ -12,6 +12,7 @@ import Team from "./Team";
 import Phone from "./Phone";
 import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
+import LICENSE_KEY from '../../data/config';
 
 const Home = () => {
 	const { isMobile } = useMedia();
@@ -35,7 +36,9 @@ const Home = () => {
 		<Fragment>
 			{isMobile ? components : (
 				<ReactFullpage
+					licenseKey={LICENSE_KEY}
 					navigation
+					// scrollHorizontally
 					render={({ state, fullpageApi }) =>
 						console.log("render prop change") || (
 							<ReactFullpage.Wrapper>

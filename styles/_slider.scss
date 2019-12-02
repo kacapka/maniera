@@ -54,6 +54,12 @@
     top: 4px;
     width: 12px;
   }
+  &--light {
+    &::after {
+      border: 1px solid #DCCCB4;;
+    }  
+  }
+
 }
 
 .Slider-navButton--active {

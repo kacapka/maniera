@@ -1,7 +1,6 @@
 import { Fragment, useState } from 'react';
 import Link from "next/link";
 import classnames from 'classnames';
-import InnerLink from "./InnerLink";
 
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +26,7 @@ const NavMobile = () => {
                     </li>
                     <li className="nav-mobile__line"></li>
                     <li>
-                        <Link href="/pricing" prefetch>
+                        <Link href="/pricing">
                             <a>
                                 CENNIK
                             </a>
@@ -35,7 +34,7 @@ const NavMobile = () => {
                     </li>
                     <li className="nav-mobile__line"></li>
                     <li>
-                        <Link href="/faq" prefetch>
+                        <Link href="/faq">
                             <a>
                                 FAQ
                             </a>

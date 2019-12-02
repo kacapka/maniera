@@ -19,7 +19,7 @@ const Nails = () => {
 
     const renderDesktopSlider = () => {
         return images.map((nail, i) => (
-            <Fragment>
+            <Fragment key={i}>
                 <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
                 {i != images.length - 1 && <div className="nails-wrapper__vl" />}
             </Fragment>

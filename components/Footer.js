@@ -19,14 +19,14 @@ const Footer = () => {
 					</Link>
 				</li> */}
 				<li>
-					<Link href="/pricing" prefetch>
+					<Link href="/pricing">
 						<a>
 							<	InnerLink text='CENNIK' />
 						</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/faq" prefetch>
+					<Link href="/faq">
 						<a>
 							<InnerLink text='FAQ' />
 						</a>

@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
+import classnames from 'classnames';
 
-const Slider = ({ children }) => {
+const Slider = ({ children, isLight }) => {
     let sliderRef = useRef();
 
     const [dragStart, setDragStart] = useState(0);
@@ -85,7 +86,7 @@ const Slider = ({ children }) => {
             const buttonClasses = i === lastIndex ? 'Slider-navButton Slider-navButton--active' : 'Slider-navButton';
             return (
                 <button
-                    className={buttonClasses}
+                    className={classnames(buttonClasses, { 'Slider-navButton--light': isLight })}
                     key={i}
                     onClick={(event) => goToSlide(i, event)} />
             );
@@ -97,8 +98,8 @@ const Slider = ({ children }) => {
     };
 
     const slidesStyles = {
-        width: `${100 * children.length}%`,
-        transform: `translateX(${-1 * index * (100 / children.length)}%)`,
+        width: `${100 * children.length}% `,
+        transform: `translateX(${- 1 * index * (100 / children.length)}%)`,
     };
     const slidesClasses = transition ? 'Slider-slides Slider-slides--transition' : 'Slider-slides';
 
