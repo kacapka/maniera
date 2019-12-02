@@ -13,6 +13,7 @@ import Team from "./Team";
 import Phone from "./Phone";
 import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
+import NavMobile from "../NavMobile";
 
 const Home = () => {
 	const { isMobile } = useMedia();
@@ -34,7 +35,7 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			<Nav />
+			{isMobile ? <NavMobile /> : <Nav />}
 			{isMobile ? components : (
 				<ReactFullpage
 					navigation
