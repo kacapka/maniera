@@ -59,9 +59,14 @@
 			margin-bottom: 60px;
 		}
 		&-wrapper {
-			margin-bottom: 100px;
+			margin-bottom: 0;
 			&__vl {
 				margin: 0 50px;
+			}
+			&__inner {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 	}	
@@ -102,7 +107,6 @@
 			margin-bottom: px;
 		}
 		&-wrapper {
-			margin-bottom: 80px;
 			&__nail {
 				width: 50px;
 				height: 90px;

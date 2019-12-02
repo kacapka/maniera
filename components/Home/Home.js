@@ -3,7 +3,6 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Hero from "./Hero";
 import Instagram from "./Instagram";
 import Main from "./Main";
-import Nav from "../Nav";
 import Services from "./Services";
 import Pricing from "./Pricing";
 import Wine from "./Wine";
@@ -13,7 +12,6 @@ import Team from "./Team";
 import Phone from "./Phone";
 import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
-import NavMobile from "../NavMobile";
 
 const Home = () => {
 	const { isMobile } = useMedia();
@@ -35,7 +33,6 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			{isMobile ? <NavMobile /> : <Nav />}
 			{isMobile ? components : (
 				<ReactFullpage
 					navigation
