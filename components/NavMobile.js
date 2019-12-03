@@ -8,7 +8,7 @@ const NavMobile = () => {
     const toggleNav = () => setIsOpen(prev => !prev);
 
     return (
-        <Fragment>
+        <div>
             <div className="nav-burger" onClick={toggleNav}>
                 <div className={classnames("burger-inner", { open: isOpen })} />
                 <div className={classnames("burger-inner", { open: isOpen })} />
@@ -42,7 +42,7 @@ const NavMobile = () => {
                     </li>
                 </ul>
             </div>
-        </Fragment>
+        </div>
     );
 };
 
