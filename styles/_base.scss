@@ -43,6 +43,22 @@ h1,h2,h3, h4 {
 	outline: none;
 }
 
+.under-construction {
+	width: 100%;
+	height: 100vh;
+	padding: 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: "RobotoMono-Medium", sans-serif;
+	font-size: 40px;
+	@media all and (max-width: 1024px) {
+		font-size: 30px;
+		padding: 0 20px;
+	}
+}
+
 // *::-webkit-scrollbar-track {
 // 	background-color: transparent;
 // }

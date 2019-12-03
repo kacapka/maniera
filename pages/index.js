@@ -15,8 +15,12 @@ export default () => {
 	return (
 		<Fragment>
 			<Head title="Maniera" />
-			{isMobile ? <NavMobile /> : <Nav />}
-			<Home />
+			{/* {isMobile ? <NavMobile /> : <Nav />} */}
+			{/* <Home /> */}
+			<div className="under-construction">
+				Strona w trakcie budowy <br />
+				Zapraszamy z powrotem 8.12.2019
+			</div>
 		</Fragment>
 	);
 };
