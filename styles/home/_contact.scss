@@ -15,17 +15,17 @@
     &-info {
         margin-bottom: 60px;
         &__text {
-            @extend %noc-italic;
+            @extend %servus-regular-italic;
             font-size: 35px;
             margin-bottom: 20px;
         }
         &__address {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 20px;
         }
         &__phone {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 40px;
         }
@@ -33,7 +33,7 @@
     &-faq {
         margin-top: 60px;
         &__text {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 40px;
         }

@@ -33,7 +33,8 @@ const Head = props => (
 			sizes="16x16"
 			href="/static/favicon-16x16.png"
 		/> */}
-		<link rel="canonical" href="https://www.drseroka.pl/" />
+		<link rel="stylesheet" href="https://use.typekit.net/fjn7dcc.css"></link>
+		<link rel="canonical" href="https://www.maniera.pl/" />
 		<link rel="manifest" href="/static/site.webmanifest"></link>
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
@@ -45,9 +46,9 @@ const Head = props => (
 
 		<meta property="og:description" content="Maniera" />
 
-		<meta property="og:url" content="https://www.drseroka.pl/" />
+		<meta property="og:url" content="https://www.maniera.pl/" />
 
-		<meta property="og:title" content="Stomatologia dr Anita Seroka" />
+		<meta property="og:title" content="Maniera" />
 	</NextHead>
 );
 

@@ -1,5 +1,5 @@
 nav {
-	position: fixed;
+	position: absolute;
 	top: 50px;
 	left: 50px;
 	z-index: 1;
@@ -12,7 +12,7 @@ nav {
 				@extend %robo-medium;
 				letter-spacing: 2px;
 				font-size: 15px;
-				color: #000;
+				color: #DCCCB4;
 				height: 20px;
 				&:hover {
 					.link-inner__default {
@@ -21,6 +21,9 @@ nav {
 					.link-inner__hover {
 						transform: translateY(100%);
 					}
+				}
+				&.black {
+					color: #000;
 				}
 			}
 		}
@@ -33,7 +36,7 @@ nav {
 	background-color: rgba(0, 0, 0, 0.80);
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 9999;
 	display: flex;
 	flex-direction: column;
@@ -42,7 +45,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transform: translateX(-100%);
+	transform: translateX(100%);
 	transition: transform 0.3s ease-in-out;
 	ul {
 		list-style: none;
@@ -81,17 +84,24 @@ nav {
 .nav-burger {
 	position: fixed;
 	top: 50px;
-	left: 20px;
+	right: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	width: 2rem;
-	height: 2rem;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	padding: 0;
+	padding: 0 0 0 11px;
 	z-index: 99999;
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40px;
+		height: 40px;
+	}
 
 	@media all and (max-width: 500px) {
 		top: 35px;
@@ -102,25 +112,25 @@ nav {
 	}
 
 	.burger-inner {
-		width: 2rem;
-		height: 0.25rem;
+		width: 18px;
+		height: 2px;
 		background:#000;
-		border-radius: 10px;
+		border-radius: 1px;
 		transition: all 0.3s linear;
 		position: relative;
-		transform-origin: 1px;
+		margin: 3px 0;
 		&.open {
 			background: #DCCCB4;
 		}
 
-		&:first-child {
+		&:nth-child(2) {
 			transform: rotate(0);
 			&.open {
-				transform: rotate(45deg);
+				transform: translate(0, 8px) rotate(45deg);
 			}
 		}
 
-		&:nth-child(2) {
+		&:nth-child(3) {
 			opacity: 1;
 			transform: translateX(0);
 			&.open {
@@ -129,10 +139,10 @@ nav {
 			}
 		}
 
-		&:nth-child(3) {
+		&:nth-child(4) {
 			transform: rotate(0);
 			&.open {
-				transform: rotate(-45deg);
+				transform: translate(0, -8px) rotate(-45deg);
 			}
 		}
 	}

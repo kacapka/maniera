@@ -8,14 +8,13 @@ import Head from "../components/head";
 import Home from "../components/Home/Home";
 import useMedia from '../components/MediaQuery/MediaQuery';
 import NavMobile from "../components/NavMobile";
-import Nav from "../components/Nav";
 
 export default () => {
-	const { isMobile } = useMedia();
+	const { isMobileOrTablet } = useMedia();
 	return (
 		<Fragment>
 			<Head title="Maniera" />
-			{isMobile ? <NavMobile /> : <Nav />}
+			{isMobileOrTablet && <NavMobile />}
 			<Home />
 		</Fragment>
 	);

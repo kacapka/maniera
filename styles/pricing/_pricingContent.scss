@@ -9,7 +9,7 @@ $width: 866px;;
         padding: 120px 0;
     }
     &-title {
-        @extend %noc-italic;
+        @extend %servus-regular-italic;
         font-size: 45px;
         margin-bottom: 15px;
     }
@@ -27,7 +27,7 @@ $width: 866px;;
         width: 100%;
         padding: 0 50px;
         &__title {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 25px;
             height: 120px;
             display: flex;
@@ -35,11 +35,11 @@ $width: 866px;;
             justify-content: center;
             cursor: pointer;
             &--open {
-                @extend %noc-italic;    
+                @extend %servus-regular-italic;  
             }
         }
         &__wrapper {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 15px;
             display: flex;
             align-items: center;

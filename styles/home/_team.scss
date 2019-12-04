@@ -27,12 +27,12 @@
             margin-bottom: 30px;
         }
         &__role {
-            @extend %noc-italic;
+            @extend %servus-regular-italic;
             font-size: 30px;
             margin-bottom: 30px;
         }
         &__desc {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 25px;
             line-height: 40px;
         }

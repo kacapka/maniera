@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import Link from "next/link";
 import classnames from 'classnames';
+import navImg from '../static/ham_circle.png';
 
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,8 @@ const NavMobile = () => {
     return (
         <div>
             <div className="nav-burger" onClick={toggleNav}>
-                <div className={classnames("burger-inner", { open: isOpen })} />
+                <img src={navImg} className="nav-burger__img" />
+                < div className={classnames("burger-inner", { open: isOpen })} />
                 <div className={classnames("burger-inner", { open: isOpen })} />
                 <div className={classnames("burger-inner", { open: isOpen })} />
             </div>

@@ -10,7 +10,7 @@ $width: 866px;;
         color: #DCCCB4;
     }
     &-title {
-        @extend %noc-italic;
+        @extend %servus-regular-italic;
         font-size: 45px;
         margin-bottom: 15px;
     }
@@ -24,7 +24,7 @@ $width: 866px;;
         width: 100%;
         padding: 0 20px;
         &__title {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 25px;
             height: 120px;
             display: flex;
@@ -32,11 +32,11 @@ $width: 866px;;
             justify-content: center;
             cursor: pointer;
             &--open {
-                @extend %noc-italic;    
+                @extend %servus-regular-italic; 
             }
         }
         &__answer {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 15px;
             line-height: 26px;
             margin-bottom: 50px;

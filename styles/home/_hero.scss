@@ -7,12 +7,12 @@
 	justify-content: center;
 	background-color: #dcccb4;
 	&-text {
-		@extend %noc-regular;
+		@extend %servus-light;
 		font-size: 55px;
 		line-height: 81px;
 		text-align: center;
 		&--italic {
-			@extend %noc-italic;
+			@extend %servus-light-italic;
 		}
 		&__top {
 			margin-bottom: 75px;

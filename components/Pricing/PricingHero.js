@@ -1,7 +1,15 @@
 import Logo from "../Logo";
+import useMedia from '../MediaQuery/MediaQuery';
+
 
 const PricingHero = () => {
-    return <section className="pricing-hero"><Logo /></section>;
+    const { isMobileOrTablet } = useMedia();
+    return (
+        <section className="pricing-hero">
+            {!isMobileOrTablet && <Nav />}
+            <Logo isBlack />
+        </section>
+    )
 };
 
 export default PricingHero;

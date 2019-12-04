@@ -7,7 +7,7 @@
 	justify-content: center;
 	background-color: #e7ece7;
 	&-title {
-		@extend %noc-italic;
+		@extend %servus-regular-italic;
 		font-size: 45px;
 		margin-bottom: 90px;
 	}
@@ -39,14 +39,14 @@
 			letter-spacing: 2px;
 		}
 		&__desc {
-			@extend %noc-regular;
+			@extend %servus-regular;
 			text-align: center;
 			font-size: 15px;
 			line-height: 26px;
 		}
 	}
 	&-info {
-		@extend %noc-regular;
+		@extend %servus-regular;
 		font-size: 15px;
 		letter-spacing: 1px;
 	}
