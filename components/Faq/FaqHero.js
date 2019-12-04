@@ -1,5 +1,6 @@
 import Logo from "../Logo";
 import useMedia from '../MediaQuery/MediaQuery';
+import Nav from "../Nav";
 
 const FaqHero = () => {
     const { isMobileOrTablet } = useMedia();

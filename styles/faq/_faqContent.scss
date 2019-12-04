@@ -45,6 +45,32 @@ $width: 866px;;
     }
 }
 
+@media all and (min-width: 1680px) {
+    $width: 1060px;;
+
+    .faq {
+        &-content {
+            padding: 160px 0;
+        }
+        &-title {
+            font-size: 62px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 32px;
+                height: 150px;
+            }
+            &__answer {
+                font-size: 22px;
+                line-height: 35px;
+            }
+        }
+    } 
+}
+
 @media all and (max-width: 1024px) {
     $width: 620px;;
 

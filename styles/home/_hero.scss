@@ -8,6 +8,7 @@
 	background-color: #dcccb4;
 	&-text {
 		@extend %servus-light;
+		width: 1060px;
 		font-size: 55px;
 		line-height: 81px;
 		text-align: center;
@@ -20,9 +21,23 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.hero {
+		&-text {
+			width: 1450px;
+			font-size: 76px;
+			line-height: 110px;
+			&__top {
+				margin-bottom: 100px;
+			}
+		}
+	}	
+}
+
 @media all and (max-width: 1366px) {
 	.hero {
 		&-text {
+			width: 850px;
 			font-size: 45px;
 			line-height: 75px;
 			&__top {

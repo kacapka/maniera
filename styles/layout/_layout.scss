@@ -42,6 +42,14 @@
 	cursor: pointer;
 }
 
+@media all and (min-width: 1680px) {
+	.app-logo {
+		top: 65px;
+		width: 260px;
+		height: 82px;
+	}
+}
+
 @media all and (max-width: 1024px) {
 	.app-logo {
 		top: 45px;

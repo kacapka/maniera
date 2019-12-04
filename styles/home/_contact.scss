@@ -40,6 +40,31 @@
     }
 }
 
+@media all and (min-width: 1680px) {
+    .contact {
+        &-info {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__address {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__phone {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
+        }
+        &-faq {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
 @media all and (max-width: 1366px) {
       
 }

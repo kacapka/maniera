@@ -148,6 +148,21 @@ nav {
 	}
 }
 
+@media all and (min-width: 1680px) {
+	nav {
+		top: 65px;
+		left: 80px;
+		ul {
+			li {
+				margin-right: 30px;
+				a {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
 @media all and (max-width: 1024px) {
 	nav {
 		top: 45px;

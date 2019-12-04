@@ -24,6 +24,17 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.main {
+		padding: 0 0 140px 0;
+		&-title {
+			font-size: 176px;
+			line-height: 190px;
+			margin-left: 140px;
+		}
+	}	
+}
+
 @media all and (max-width: 1366px) {
 	.main {
 		&-title {

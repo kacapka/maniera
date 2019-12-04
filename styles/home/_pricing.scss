@@ -41,6 +41,31 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.main-pricing {
+		&-image {
+			width: 610px;
+			height: 610px;
+			margin-right: 70px;
+		}
+		&-wrapper {
+			margin-bottom: 110px;
+		}
+		&-text {
+			margin-left: 70px;
+			&__title {
+				font-size: 55px;
+				line-height: 82px;
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+			}
+			&__wow {
+				font-size: 40px;
+			}
+		}
+	}	
+}
+
 @media all and (max-width: 1366px) {
 	.main-pricing {
 		&-image {

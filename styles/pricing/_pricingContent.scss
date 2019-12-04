@@ -52,6 +52,39 @@ $width: 866px;;
     }
 }
 
+@media all and (min-width: 1680px) {
+    $width: 1060px;;
+
+    .pricing {
+        &-content {
+            padding: 160px 0;
+        }
+        &-title {
+            font-size: 62px;
+            margin-bottom: 0;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-button {
+            width: $width !important;
+        }
+        &-item {
+            padding: 0 80px;
+            &__title {
+                font-size: 35px;
+                height: 140px;
+            }
+            &__wrapper {
+                font-size: 20px;
+                &:last-of-type {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    } 
+}
+
 @media all and (max-width: 1366px) {
 
 }

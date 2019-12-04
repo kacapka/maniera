@@ -35,6 +35,29 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.nails {
+		&-title {
+			font-size: 35px;
+		}
+		&-subtitle {
+			font-size: 82px;
+			margin-bottom: 100px;
+		}
+		&-wrapper {
+			margin-bottom: 120px;
+			&__nail {
+				width: 95px;
+				height: 170px;
+			}
+			&__vl {
+				height: 205px;
+				margin: 0 90px;
+			}
+		}
+	}	
+}
+
 @media all and (max-width: 1366px) {
 	.nails {
 		&-title {
