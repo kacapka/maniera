@@ -138,6 +138,12 @@
         }
         &-photos {
             margin-bottom: 40px;
+            &__item {
+                flex: 0 0 92px;
+                width: 92px;
+                height: 92px;
+                margin: 0 6px;
+            }
         }
     }    
 }

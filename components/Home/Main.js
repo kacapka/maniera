@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from "../../static/logo.png";
+import classnames from 'classnames';
 import Logo from "../Logo";
 import Nav from "../Nav";
 import useMedia from '../MediaQuery/MediaQuery';
@@ -21,18 +21,10 @@ const Main = () => {
 			<div className="main">
 				{!isMobileOrTablet && <Nav />}
 				<Logo />
-				{isMobileOrTablet && (
-					<h1 className="main-title">
-						<span>Witaj&nbsp;</span>
-						<span className="main-title__bottom">w Manièrze.</span>
-					</h1>
-				)}
-				{isTitle && (
-					<h1 className="main-title">
-						<span>Witaj&nbsp;</span>
-						<span className="main-title__bottom">w Manièrze.</span>
-					</h1>
-				)}
+				<h1 className={classnames("main-title", { "main-title--tablet": isMobileOrTablet })}>
+					<span>Witaj&nbsp;</span>
+					<span className="main-title__bottom">w Manièrze.</span>
+				</h1>
 			</div>
 		</section>
 	);

@@ -74,7 +74,7 @@ const Instagram = () => {
 		if (isSmallDesktop) photos = igPhotos.slice(0, 4);
 		if (isMobileOrTablet) photos = igPhotos.slice(0, 6);
 
-		if (isMobileOrTablet && !isSmallMobile) {
+		if (isMobileOrTablet) {
 			return (
 				<Slider isLight>
 					<div className="instagram-photos__inner">
@@ -84,23 +84,6 @@ const Instagram = () => {
 					</div>
 					<div className="instagram-photos__inner">
 						<a href={photos[3].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[3].displayUrl})` }} />
-						<a href={photos[4].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[4].displayUrl})` }} />
-						<a href={photos[5].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[5].displayUrl})` }} />
-					</div>
-				</Slider>
-			);
-		} else if (isSmallMobile) {
-			return (
-				<Slider isLight>
-					<div className="instagram-photos__inner">
-						<a href={photos[0].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[0].displayUrl})` }} />
-						<a href={photos[1].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[1].displayUrl})` }} />
-					</div>
-					<div className="instagram-photos__inner">
-						<a href={photos[2].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[2].displayUrl})` }} />
-						<a href={photos[3].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[3].displayUrl})` }} />
-					</div>
-					<div className="instagram-photos__inner">
 						<a href={photos[4].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[4].displayUrl})` }} />
 						<a href={photos[5].url} target="_blank" className="instagram-photos__item" style={{ backgroundImage: `url(${photos[5].displayUrl})` }} />
 					</div>
