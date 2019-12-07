@@ -71,6 +71,10 @@
 			&__top {
 				margin-bottom: 50px;
 			}
+			&__bottom {
+				width: 405px;
+				margin-bottom: 50px;
+			}
 		}
 	}	
 }
@@ -78,7 +82,7 @@
 @media all and (max-width: 500px) {
 	.hero {
 		&-text {
-			width: 260px;
+			width: 240px;
 			font-size: 20px;
 			line-height: 36px;
 			&__top {

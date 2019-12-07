@@ -9,6 +9,8 @@
 
 @media all and (max-width: 767px) {
 	.wine {
+		background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_wine_mobile.jpg');
 		height: 100vh;
+		background-size: cover;
 	}	
 }
