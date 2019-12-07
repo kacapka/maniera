@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, createContext } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Hero from "./Hero";
 import Instagram from "./Instagram";
@@ -13,6 +13,8 @@ import Phone from "./Phone";
 import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
 import LICENSE_KEY from '../../data/config';
+
+export const FpContext = createContext({});
 
 const Home = () => {
 	const { isMobile } = useMedia();
@@ -38,11 +40,14 @@ const Home = () => {
 				<ReactFullpage
 					licenseKey={LICENSE_KEY}
 					navigation
-					// scrollHorizontally
+					fadingEffect
+					onLeave={(origin, destination, direction) => console.log(origin, destination, direction)}
 					render={({ state, fullpageApi }) =>
-						console.log("render prop change") || (
+						console.log("") || (
 							<ReactFullpage.Wrapper>
-								{components}
+								<FpContext.Provider value={null}>
+									{components}
+								</FpContext.Provider>
 							</ReactFullpage.Wrapper>
 						)
 					}

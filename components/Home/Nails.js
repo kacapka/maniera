@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import useMedia from '../MediaQuery/MediaQuery';
 import Slider from '../Slider';
+import Fade from 'react-reveal/Fade';
 
 import nail1 from "../../static/nails/nail1.png";
 import nail2 from "../../static/nails/nail2.png";
@@ -56,12 +57,20 @@ const Nails = () => {
     return (
         <section className="section">
             <div className="nails">
-                <p className="nails-title">- STYLED BY MANIERA -</p>
-                <h2 className="nails-subtitle">Śledzimy najnowsze trendy.</h2>
-                <div className="nails-wrapper">
-                    {isMobileOrTablet ? renderMobileSlider() : renderDesktopSlider()}
-                </div>
-                {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+                <Fade bottom>
+                    <p className="nails-title">- STYLED BY MANIERA -</p>
+                </Fade>
+                <Fade bottom>
+                    <h2 className="nails-subtitle">Śledzimy najnowsze trendy.</h2>
+                </Fade>
+                <Fade bottom delay={200}>
+                    <div className="nails-wrapper">
+                        {isMobileOrTablet ? renderMobileSlider() : renderDesktopSlider()}
+                    </div>
+                </Fade>
+                <Fade bottom delay={500}>
+                    {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+                </Fade>
             </div>
         </section>
     );
