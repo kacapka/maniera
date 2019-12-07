@@ -10,7 +10,7 @@ const Circle = ({ text }) => (
                         dur="30s"
                         type="rotate"
                         from="0 250 250"
-                        to="360 250 250"
+                        to="-360 250 250"
                         repeatCount="indefinite"
                     />
                 </path>
