@@ -33,7 +33,7 @@ nav {
 .nav-mobile {
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.80);
+	background: #DCCCB4;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -57,7 +57,7 @@ nav {
 				@extend %robo-medium;
 				letter-spacing: 2px;
 				font-size: 25px;
-				color: #DCCCB4;
+				color: #000;
 				height: 25px;
 				&:hover {
 					.link-inner__default {
@@ -73,7 +73,7 @@ nav {
 	&__line {
 		height: 2px;
 		width: 30px;
-		background: #DCCCB4;
+		background: #000;
 		margin: 30px 0;
 	}
 	&.open {
@@ -119,9 +119,6 @@ nav {
 		transition: all 0.3s linear;
 		position: relative;
 		margin: 3px 0;
-		&.open {
-			background: #DCCCB4;
-		}
 
 		&:nth-child(2) {
 			transform: rotate(0);
