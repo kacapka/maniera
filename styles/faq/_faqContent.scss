@@ -93,6 +93,9 @@ $width: 866px;;
             &__title {
                 font-size: 20px;
                 height: 90px;
+                &:hover {
+                    font-weight: normal;
+                }
             }
             &__answer {
                 margin-bottom: 30px;

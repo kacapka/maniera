@@ -113,6 +113,11 @@ $width: 866px;;
         }
         &-item {
             padding: 0;
+            &__title {
+                &:hover {
+                    font-weight: normal;
+                }
+            }
         }
     }    
 }
