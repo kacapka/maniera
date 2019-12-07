@@ -89,7 +89,7 @@
 		padding: 0 0 100px 0;
 		flex-direction: column-reverse;
 		&-wrapper {
-			margin: 120px 0 50px 0;
+			margin: 100px 0 0 0;
 			flex-direction: column;
 		}
 		.circle {
@@ -145,6 +145,9 @@
 @media all and (max-width: 500px) {
 	.main-pricing {
 		padding: 0 0 80px 0;
+		&-wrapper {
+			margin: 80px 0 0 0;
+		}
 		&-text {
 			&__title {
 				width: 240px;
