@@ -37,6 +37,10 @@ $width: 866px;;
             &--open {
                 @extend %servus-regular-italic;  
             }
+            transition: font-style 2s ease;
+            &:hover {
+                font-weight: 600;
+            }
         }
         &__wrapper {
             @extend %servus-regular;
