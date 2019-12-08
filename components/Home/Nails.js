@@ -1,11 +1,18 @@
 import { Fragment } from 'react';
 import { LinkBox, LinkBoxMobile } from "../LinkBox";
-import nail from "../../static/nail.png";
 import useMedia from '../MediaQuery/MediaQuery';
 import Slider from '../Slider';
+import Fade from 'react-reveal/Fade';
+
+import nail1 from "../../static/nails/nail1.png";
+import nail2 from "../../static/nails/nail2.png";
+import nail3 from "../../static/nails/nail3.png";
+import nail4 from "../../static/nails/nail4.png";
+import nail5 from "../../static/nails/nail5.png";
+import nail6 from "../../static/nails/nail6.png";
 
 const images = [
-    nail, nail, nail, nail, nail, nail
+    nail1, nail2, nail3, nail4, nail5, nail6
 ];
 
 const Nails = () => {
@@ -14,7 +21,8 @@ const Nails = () => {
     const buttonProps = {
         link: "https://www.moment.pl/maniera-nail-bar",
         text: "umów wizytę",
-        internal: false
+        internal: false,
+        className: 'button-wrapper--mint'
     }
 
     const renderDesktopSlider = () => {
@@ -50,12 +58,20 @@ const Nails = () => {
     return (
         <section className="section">
             <div className="nails">
-                <p className="nails-title">- STYLED BY MANIERA -</p>
-                <h2 className="nails-subtitle">Śledzimy najnowsze trendy.</h2>
-                <div className="nails-wrapper">
-                    {isMobileOrTablet ? renderMobileSlider() : renderDesktopSlider()}
-                </div>
-                {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+                <Fade bottom>
+                    <p className="nails-title">- STYLED BY MANIERA -</p>
+                </Fade>
+                <Fade bottom>
+                    <h2 className="nails-subtitle">Śledzimy najnowsze trendy.</h2>
+                </Fade>
+                <Fade bottom delay={200}>
+                    <div className="nails-wrapper">
+                        {isMobileOrTablet ? renderMobileSlider() : renderDesktopSlider()}
+                    </div>
+                </Fade>
+                <Fade bottom delay={500}>
+                    {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
+                </Fade>
             </div>
         </section>
     );

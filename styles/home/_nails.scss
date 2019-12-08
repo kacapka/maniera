@@ -13,7 +13,7 @@
 		margin-bottom: 50px;
 	}
 	&-subtitle {
-		@extend %noc-italic;
+		@extend %servus-regular-italic;
 		font-size: 45px;
 		margin-bottom: 85px;
 	}
@@ -35,12 +35,36 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.nails {
+		&-title {
+			font-size: 35px;
+		}
+		&-subtitle {
+			font-size: 82px;
+			margin-bottom: 100px;
+		}
+		&-wrapper {
+			margin-bottom: 120px;
+			&__nail {
+				width: 95px;
+				height: 170px;
+			}
+			&__vl {
+				height: 205px;
+				margin: 0 90px;
+			}
+		}
+	}	
+}
+
 @media all and (max-width: 1366px) {
 	.nails {
 		&-title {
 			margin-bottom: 40px;
 		}
 		&-wrapper {
+			margin-bottom: 80px;
 			&__vl {
 				margin: 0 50px;
 			}
@@ -50,6 +74,7 @@
 
 @media all and (max-width: 1024px) {
 	.nails {
+		height: 100vh;
 		&-title {
 			font-size: 20px;
 			margin-bottom: 30px;
@@ -74,7 +99,8 @@
 
 @media all and (max-width: 767px) {
 	.nails {
-		padding: 120px 0;
+		height: auto;
+		padding: 100px 0;
 		&-title {
 			font-size: 20px;
 			margin-bottom: 30px;
@@ -98,6 +124,7 @@
 
 @media all and (max-width: 500px) {
 	.nails {
+		padding: 80px 0;
 		&-title {
 			font-size: 15px;
 			margin-bottom: 20px;

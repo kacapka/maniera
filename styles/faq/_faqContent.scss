@@ -10,7 +10,7 @@ $width: 866px;;
         color: #DCCCB4;
     }
     &-title {
-        @extend %noc-italic;
+        @extend %servus-regular-italic;
         font-size: 45px;
         margin-bottom: 15px;
     }
@@ -24,7 +24,7 @@ $width: 866px;;
         width: 100%;
         padding: 0 20px;
         &__title {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 25px;
             height: 120px;
             display: flex;
@@ -32,17 +32,47 @@ $width: 866px;;
             justify-content: center;
             cursor: pointer;
             &--open {
-                @extend %noc-italic;    
+                @extend %servus-regular-italic; 
+            }
+            transition: font-style 2s ease;
+            &:hover {
+                font-weight: 600;
             }
         }
         &__answer {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 15px;
             line-height: 26px;
             margin-bottom: 50px;
             text-align: center;
         }
     }
+}
+
+@media all and (min-width: 1680px) {
+    $width: 1060px;;
+
+    .faq {
+        &-content {
+            padding: 160px 0;
+        }
+        &-title {
+            font-size: 62px;
+        }
+        &-wrapper {
+            width: $width;
+        }
+        &-item {
+            &__title {
+                font-size: 32px;
+                height: 150px;
+            }
+            &__answer {
+                font-size: 22px;
+                line-height: 35px;
+            }
+        }
+    } 
 }
 
 @media all and (max-width: 1024px) {
@@ -63,6 +93,9 @@ $width: 866px;;
             &__title {
                 font-size: 20px;
                 height: 90px;
+                &:hover {
+                    font-weight: normal;
+                }
             }
             &__answer {
                 margin-bottom: 30px;

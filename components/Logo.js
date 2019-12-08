@@ -1,11 +1,12 @@
 import Link from "next/link";
-import logo from "../static/logo.png";
+import logoWhite from "../static/logo_white.png";
+import logoBlack from "../static/logo.png";
 
-const Logo = () => (
+const Logo = ({ isBlack }) => (
     <Link href="/">
         <a>
             <img
-                src={logo}
+                src={isBlack ? logoBlack : logoWhite}
                 alt="maniera nail + face bar"
                 className="app-logo"
             />

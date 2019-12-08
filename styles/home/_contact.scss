@@ -15,17 +15,17 @@
     &-info {
         margin-bottom: 60px;
         &__text {
-            @extend %noc-italic;
+            @extend %servus-regular-italic;
             font-size: 35px;
             margin-bottom: 20px;
         }
         &__address {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 20px;
         }
         &__phone {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 40px;
         }
@@ -33,9 +33,34 @@
     &-faq {
         margin-top: 60px;
         &__text {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 35px;
             margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (min-width: 1680px) {
+    .contact {
+        &-info {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__address {
+                font-size: 48px;
+                margin-bottom: 25px;
+            }
+            &__phone {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
+        }
+        &-faq {
+            &__text {
+                font-size: 48px;
+                margin-bottom: 45px;
+            }
         }
     }
 }
@@ -46,6 +71,7 @@
 
 @media all and (max-width: 1024px) {
     .contact {
+        height: 100vh;
         &-info {
             margin-bottom: 35px;
             &__text {
@@ -73,7 +99,8 @@
 
 @media all and (max-width: 767px) {
     .contact {
-        padding: 120px 0;
+        height: auto;
+        padding: 100px 0;
         &-info {
             margin-bottom: 70px;
             &__text {
@@ -83,7 +110,7 @@
             &__address {
                 font-size: 30px;
                 margin-bottom: 20px;
-                width: 270px;
+                width: 250px;
                 text-align: center;
                 line-height: 45px;
             }
@@ -110,7 +137,7 @@
 
 @media all and (max-width: 500px) {
     .contact {
-        padding: 60px 0 100px 0;
+        padding: 80px 0 80px 0;
         &-info {
             margin-bottom: 50px;
             &__text {
@@ -120,11 +147,11 @@
             &__address {
                 font-size: 20px;
                 margin-bottom: 15px;
-                width: 180px;
+                width: 170px;
                 line-height: 35px;
             }
             &__phone {
-                width: 250px;
+                width: 230px;
                 font-size: 20px;
                 margin-bottom: 25px;
                 line-height: 35px;

@@ -21,7 +21,7 @@
 		margin-bottom: 50px;
     }
     &-text {
-        @extend %noc-italic;
+        @extend %servus-regular-italic;
         font-size: 45px;
         margin-bottom: 50px;
         a {
@@ -35,7 +35,6 @@
         &__item {
             width: 225px;
             height: 225px;
-            border: 2px solid #DCCCB4;
             margin: 0 12px;
             display: block;
             background-size: cover;
@@ -43,6 +42,31 @@
             background-repeat: no-repeat;
         }
     }
+}
+
+@media all and (min-width: 1680px) {
+    .instagram {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        &-title {
+            font-size: 35px;
+        }
+        &-text {
+            font-size: 62px;
+        }
+        &-photos {
+            &__item {
+                width: 300px;
+                height: 300px;
+                margin: 0 18px;
+            }
+        }
+    }    
 }
 
 @media all and (max-width: 1366px) {
@@ -55,6 +79,7 @@
 
 @media all and (max-width: 1024px) {
     .instagram {
+        height: 100vh;
         &-title {
             font-size: 20px;
             margin-bottom: 35px;
@@ -87,6 +112,7 @@
 
 @media all and (max-width: 767px) {
     .instagram {
+        height: auto;
         &-text {
             width: 280px;
             text-align: center;
@@ -114,6 +140,12 @@
         }
         &-photos {
             margin-bottom: 40px;
+            &__item {
+                flex: 0 0 92px;
+                width: 92px;
+                height: 92px;
+                margin: 0 6px;
+            }
         }
     }    
 }

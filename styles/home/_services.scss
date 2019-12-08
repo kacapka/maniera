@@ -7,7 +7,7 @@
 	justify-content: center;
 	background-color: #e7ece7;
 	&-title {
-		@extend %noc-italic;
+		@extend %servus-regular-italic;
 		font-size: 45px;
 		margin-bottom: 90px;
 	}
@@ -39,17 +39,48 @@
 			letter-spacing: 2px;
 		}
 		&__desc {
-			@extend %noc-regular;
+			@extend %servus-regular;
 			text-align: center;
 			font-size: 15px;
 			line-height: 26px;
 		}
 	}
 	&-info {
-		@extend %noc-regular;
+		@extend %servus-regular;
 		font-size: 15px;
 		letter-spacing: 1px;
 	}
+}
+
+@media all and (min-width: 1680px) {
+	.services {
+		&-title {
+			font-size: 62px;
+			margin-bottom: 100px;
+		}
+		&-item {
+			width: 480px;
+			margin: 0 20px;
+			&__line {
+				width: 100px;
+				margin-bottom: 60px;
+			}
+			&__title {
+				width: 350px;
+				font-size: 42px;
+				line-height: 42px;
+				margin-bottom: 50px;
+			}
+			&__desc {
+				font-size: 22px;
+				line-height: 40px;
+				width: 400px;
+			}
+		}
+		&-info {
+			font-size: 22px;
+		}
+	}	
 }
 
 @media all and (max-width: 1366px) {
@@ -69,6 +100,7 @@
 
 @media all and (max-width: 1024px) {
 	.services {
+		height: 100vh;
 		&-title {
 			font-size: 35px;
 			margin-bottom: 35px;
@@ -115,7 +147,8 @@
 
 @media all and (max-width: 767px) {
 	.services {
-		padding: 120px 0 50px 0;
+		height: auto;
+		padding: 100px 0 50px 0;
 		&-title {
 			font-size: 35px;
 			margin-bottom: 50px;
@@ -150,7 +183,7 @@
 
 @media all and (max-width: 500px) {
 	.services {
-		padding: 90px 0 40px 0;
+		padding: 80px 0 40px 0;
 		&-title {
 			font-size: 22px;
 			margin-bottom: 40px;

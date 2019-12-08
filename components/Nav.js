@@ -1,7 +1,8 @@
 import Link from "next/link";
+import classnames from 'classnames';
 import InnerLink from "./InnerLink";
 
-const Nav = () => {
+const Nav = ({ isBlack }) => {
 	return (
 		<nav>
 			<ul>
@@ -9,20 +10,21 @@ const Nav = () => {
 					<a
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
+						className={classnames({ 'black': isBlack })}
 					>
 						<InnerLink text='UMÓW WIZYTĘ' />
 					</a>
 				</li>
 				<li>
 					<Link href="/pricing">
-						<a>
+						<a className={classnames({ 'black': isBlack })}>
 							<InnerLink text='CENNIK' />
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/faq">
-						<a>
+						<a className={classnames({ 'black': isBlack })}>
 							<InnerLink text='FAQ' />
 						</a>
 					</Link>

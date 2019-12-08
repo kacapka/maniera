@@ -1,91 +1,108 @@
-.button-wrapper {
-	position: relative;
+
+.button-wrapper {	
     width: 680px;
     height: 60px;
-    &__text {
-        @extend %robo-medium;
-        color: #000;
-        font-size: 25px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
-        border: 1px solid #000;
-        cursor: pointer;
-    }
-    .shape1,
-    .shape2 {
-        stroke-dasharray: 140 540;
-        stroke-dashoffset: -474;
-        stroke-width: 0;
-        fill: transparent;
-        stroke: #19f6e8;
-        border-bottom: 5px solid black;
-        transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-    }
-    .shape1 {
-        stroke-dashoffset: -1480;
-    }
-    .shape2 {
-        stroke-dashoffset: 1480;
-    }
+    @extend %robo-medium;	
+    display: block;
+	position: relative;	
+	color: #000;
+	text-transform: uppercase;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
     &--light {
-        .button-wrapper__text {
-            color: #dcccb4;
-            border-color: #dcccb4;
-        } 
-        .shape1,
-        .shape2 {
-            stroke: #dcccb4;
-        }  
+        color: #dcccb4;
+        border-color: #dcccb4;  
     }
 }
 
-// .svg-wrapper {
-//     position: relative;
-//     width: 680px;
-//     height: 60px;  
-// }
-//   .shape {
-//     stroke-dasharray: 1e-05px, 1480px;
-//     stroke-dashoffset: -740;
-//     stroke-width: 0;
-//     fill: transparent;
-//     stroke: #000;
-//     border-bottom: 5px solid black;
-//     transition: stroke-dashoffset 1s, stroke-dasharray 1s;
-//   }
-//   .text {
-//     @extend %robo-medium;
-//     color: #000;
-//     font-size: 25px;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 60px;
-//     text-align: center;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-transform: uppercase;
-//     border: 1px solid #000;
-//     cursor: pointer;
-//   }
-//   .svg-wrapper:hover .shape {
-//     stroke-width: 4px;
-//     stroke-dashoffset: 0;
-//     stroke-dasharray: 1480px;
-//   }
+.button-wrapper--mint:hover {
+	color: #E7ECE7;
+}
+.button-wrapper--violet:hover {
+	color: #473B4D;
+}
+.button-wrapper--beige:hover {
+	color: #E9E4D8;
+}
+
+.button-wrapper:before, .button-wrapper:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.button-wrapper:hover {
+	transition-delay: .6s;
+}
+
+.button-wrapper:hover:before {
+	transition-delay: 0s;
+}
+
+.button-wrapper:hover:after {
+	background: #000;
+	transition-delay: .4s;
+}
+
+.button-wrapper--light:hover:after {
+	background: #dcccb4;
+	transition-delay: .4s;
+}
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.button-wrapper.from-right:before {
+	left: 0;
+	border: 2px solid #000;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.button-wrapper--light.from-right:before {
+	left: 0;
+	border: 2px solid #dcccb4;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+
 
 .mobile-button-wrapper {
     @extend %robo-medium;   
+}
+
+@media all and (min-width: 1680px) {
+    .button-wrapper {
+        width: 930px;
+        height: 82px!important;
+        &__text {
+            font-size: 35px;
+            height: 82px;
+        }
+    }   
 }
 
 @media all and (max-width: 1024px) {

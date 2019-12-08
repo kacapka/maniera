@@ -1,24 +1,22 @@
+// import { useRef, useLayoutEffect } from 'react';
 import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import useMedia from '../MediaQuery/MediaQuery';
+import Circle from '../Circle';
 
 const Pricing = () => {
 	const { isMobileOrTablet } = useMedia();
 	const buttonProps = {
 		link: "/pricing",
 		text: "sprawdź nasze ceny",
-		internal: true
+		internal: true,
+		className: 'button-wrapper--mint'
 	}
+
 	return (
 		<section className="section">
 			<div className="main-pricing">
 				<div className="main-pricing-wrapper">
-					<svg className="main-pricing-wrapper__image" viewBox="0 0 500 500" className="main-pricing-image">
-						<path
-							id="curve"
-							fill="transparent"
-							d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
-						/>
-					</svg>
+					<Circle text="Wiemy jak cenny jest Twój czas." />
 					<div className="main-pricing-text">
 						<h2 className="main-pricing-text__title">
 							<span className="top">MANI + PEDI</span>

@@ -5,42 +5,67 @@
     justify-content: center;
     align-items: center;
     background: #B5C7D8;
-    &-image {
-        width: 550px;
-        height: 550px;
+    .circle-image {
         background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_hands.JPG');
-        background-position: 52% 20%;
-        background-size: 260%;
-        background-repeat: no-repeat;
-        border-radius: 50%;
+        background-size: 250%;
+        background-position: 50% 20%;  
     }
+    .circle-text {
+        transform: rotate(90deg);
+    }
+}
+
+@media all and (min-width: 1367px) and (max-width: 1679px) {
+    .hands {
+        .circle {
+            width: 620px;
+            height: 620px; 
+        }
+        .circle-image {
+            width: 500px;
+            height: 500px;   
+        }
+        .circle-text {
+            text { 
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1680px) {
+    .hands {
+        .circle {
+            width: 930px;
+            height: 930px; 
+        }
+        .circle-image {
+            width: 750px;
+            height: 750px;   
+        }
+        .circle-text {
+            text { 
+                font-size: 20px;
+            }
+        }
+    }   
 }
 
 @media all and (max-width: 1024px) {
     .hands {
-        &-image {
-            width: 400px;
-            height: 400px;
-        }
+        height: 100vh;
     }    
 }
 
 @media all and (max-width: 767px) {
     .hands {
-        padding: 150px 0 180px 0;
-        &-image {
-            width: 290px;
-            height: 290px;
-        }
+        height: auto;
+        padding: 100px 0 100px 0;
     }    
 }
 
 @media all and (max-width: 500px) {
     .hands {
-        padding: 170px 0 220px 0;
-        &-image {
-            width: 225px;
-            height: 225px;
-        }
+        padding: 80px 0 80px 0;
     }    
 }

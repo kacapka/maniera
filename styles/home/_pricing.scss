@@ -6,20 +6,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	&-image {
-		width: 450px;
-		height: 450px;
-		border-radius: 50%;
+	.circle-image {
 		background-image: url("https://maniera.s3.eu-central-1.amazonaws.com/maniera_watch.JPG");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-right: 50px;
 	}
 	&-wrapper {
 		display: flex;
 		align-items: center;
-		margin-bottom: 90px;
+		margin-bottom: 50px;
 	}
 	&-text {
 		margin-left: 50px;
@@ -41,27 +34,40 @@
 	}
 }
 
-@media all and (max-width: 1366px) {
+
+@media all and (min-width: 1680px) {
 	.main-pricing {
-		&-image {
-			width: 400px;
-			height: 400px;
-		}
 		&-wrapper {
 			margin-bottom: 50px;
+		}
+		&-text {
+			margin-left: 70px;
+			&__title {
+				font-size: 55px;
+				line-height: 82px;
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+			}
+			&__wow {
+				font-size: 40px;
+			}
+		}
+	}	
+}
+
+@media all and (max-width: 1366px) {
+	.main-pricing {
+		&-wrapper {
+			margin-bottom: 30px;
 		}
 	}	
 }
 
 @media all and (max-width: 1024px) {
 	.main-pricing {
-		&-image {
-			width: 360px;
-			height: 360px;
-			margin-right: 30px;
-		}
+		height: 100vh;
 		&-wrapper {
-			margin-bottom: 80px;
+			margin-bottom: 20px;
 		}
 		&-text {
 			margin-left: 30px;
@@ -81,16 +87,15 @@
 
 @media all and (max-width: 767px) {
 	.main-pricing {
+		height: auto;
 		padding: 0 0 100px 0;
 		flex-direction: column-reverse;
-		&-image {
-			width: 315px;
-			height: 315px;
-			margin: 0 0 80px 0;
-		}
 		&-wrapper {
-			margin: 120px 0 0 0;
+			margin: 100px 0 0 0;
 			flex-direction: column;
+		}
+		.circle {
+			margin-bottom: 30px;
 		}
 		&-text {
 			margin-left: 0;
@@ -142,10 +147,8 @@
 @media all and (max-width: 500px) {
 	.main-pricing {
 		padding: 0 0 80px 0;
-		&-image {
-			width: 225px;
-			height: 225px;
-			margin: 0 0 60px 0;
+		&-wrapper {
+			margin: 80px 0 0 0;
 		}
 		&-text {
 			&__title {

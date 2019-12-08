@@ -27,14 +27,40 @@
             margin-bottom: 30px;
         }
         &__role {
-            @extend %noc-italic;
+            @extend %servus-regular-italic;
             font-size: 30px;
             margin-bottom: 30px;
         }
         &__desc {
-            @extend %noc-regular;
+            @extend %servus-regular;
             font-size: 25px;
             line-height: 40px;
+        }
+    }
+}
+
+@media all and (min-width: 1680px) {
+    .team {
+        &-photo {
+            flex: 0 0 676px;
+            width: 676px;
+            height: 776px;
+        }
+        &-info {
+            height: 776px;
+            &__name {
+                font-size: 62px;
+                margin-bottom: 50px;
+            }
+            &__role {
+                font-size: 42px;
+                margin-bottom: 40px;
+            }
+            &__desc {
+                width: 675px;
+                font-size: 35px;
+                line-height: 54px;
+            }
         }
     }
 }
@@ -58,6 +84,7 @@
 
 @media all and (max-width: 1024px) {
     .team {
+        height: 100vh;
         &-photo {
             flex: 0 0 320px;
             width: 320px;
@@ -86,6 +113,7 @@
 
 @media all and (max-width: 767px) {
     .team {
+        height: auto;
         flex-direction: column;
         padding: 0 0 100px 0;
         &-photo {

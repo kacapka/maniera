@@ -13,9 +13,11 @@ module.exports = withImages(
 			};
 			return config;
 		},
-		exportPathMap: function() {
+		exportPathMap: function () {
 			return {
-				"/": { page: "/" }
+				"/": { page: "/" },
+				"/faq": { page: "/faq" },
+				"/pricing": { page: "/pricing" }
 			};
 		}
 	})
