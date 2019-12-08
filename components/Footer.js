@@ -50,20 +50,20 @@ const Footer = () => {
 				</li>
 				<li>
 					<a
-						href="https://www.moment.pl/maniera-nail-bar"
+						href="https://www.facebook.com/manieranailbar"
 						target="_blank"
 					>
 						<InnerLink text='Facebook' />
 					</a>
 				</li>
-				<li>
+				{/* <li>
 					<a
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
 						<InnerLink text='Pinterest' />
 					</a>
-				</li>
+				</li> */}
 			</ul>
 			<div className="footer-authors">
 				{/* <p className="footer-authors__text">realizacja:&nbsp;</p> */}
