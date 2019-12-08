@@ -84,6 +84,7 @@
 
 @media all and (max-width: 1024px) {
     .team {
+        height: 100vh;
         &-photo {
             flex: 0 0 320px;
             width: 320px;
@@ -112,6 +113,7 @@
 
 @media all and (max-width: 767px) {
     .team {
+        height: auto;
         flex-direction: column;
         padding: 0 0 100px 0;
         &-photo {

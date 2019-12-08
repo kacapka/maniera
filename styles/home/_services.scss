@@ -100,6 +100,7 @@
 
 @media all and (max-width: 1024px) {
 	.services {
+		height: 100vh;
 		&-title {
 			font-size: 35px;
 			margin-bottom: 35px;
@@ -146,6 +147,7 @@
 
 @media all and (max-width: 767px) {
 	.services {
+		height: auto;
 		padding: 100px 0 50px 0;
 		&-title {
 			font-size: 35px;

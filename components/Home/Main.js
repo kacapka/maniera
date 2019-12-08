@@ -6,7 +6,6 @@ import useMedia from '../MediaQuery/MediaQuery';
 
 const Main = () => {
 	const { isMobileOrTablet } = useMedia();
-	console.log(isMobileOrTablet);
 
 	return (
 		<section className="section">

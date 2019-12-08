@@ -16,7 +16,7 @@ import LICENSE_KEY from '../../data/config';
 
 
 const Home = () => {
-	const { isMobile } = useMedia();
+	const { isMobileOrTablet } = useMedia();
 	const components = (
 		<>
 			<Main />
@@ -35,7 +35,7 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			{isMobile ? components : (
+			{isMobileOrTablet ? components : (
 				<ReactFullpage
 					licenseKey={LICENSE_KEY}
 					navigation

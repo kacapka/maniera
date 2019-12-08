@@ -15,12 +15,14 @@
 }
 
 @media all and (max-width: 1024px) {
-
+	.wine {
+		height: 100vh;
+	}	
 }
 
 @media all and (max-width: 767px) {
 	.wine {
-		height: 100vh;
+		// height: 100vh;
 		background-size: cover;
 	}	
 }

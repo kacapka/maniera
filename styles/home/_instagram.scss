@@ -79,6 +79,7 @@
 
 @media all and (max-width: 1024px) {
     .instagram {
+        height: 100vh;
         &-title {
             font-size: 20px;
             margin-bottom: 35px;
@@ -111,6 +112,7 @@
 
 @media all and (max-width: 767px) {
     .instagram {
+        height: auto;
         &-text {
             width: 280px;
             text-align: center;

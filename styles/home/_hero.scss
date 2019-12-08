@@ -5,7 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #dcccb4;
+	background-color: #E9E4D8;
 	&-text {
 		@extend %servus-light;
 		width: 1060px;
@@ -49,6 +49,7 @@
 
 @media all and (max-width: 1024px) {
 	.hero {
+		height: 100vh;
 		&-text {
 			max-width: 660px;
 			font-size: 35px;
@@ -63,6 +64,7 @@
 
 @media all and (max-width: 767px) {
 	.hero {
+		height: auto;
 		padding: 100px 0;
 		&-text {
 			width: 405px;

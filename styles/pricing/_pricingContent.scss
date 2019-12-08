@@ -53,6 +53,11 @@ $width: 866px;;
                 margin-bottom: 50px;
             }
         }
+        &__price {
+            flex: 0 0 100px;
+            text-align: right;
+            padding-left: 10px;
+        }
     }
 }
 
@@ -170,13 +175,6 @@ $width: 866px;;
         }
         &-wrapper {
             width: $width;
-        }
-        &-item {
-            &__price {
-                flex: 0 0 100px;
-                text-align: right;
-                padding-left: 10px;
-            }
         }
     } 
 }

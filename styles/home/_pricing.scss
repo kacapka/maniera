@@ -65,6 +65,7 @@
 
 @media all and (max-width: 1024px) {
 	.main-pricing {
+		height: 100vh;
 		&-wrapper {
 			margin-bottom: 20px;
 		}
@@ -86,6 +87,7 @@
 
 @media all and (max-width: 767px) {
 	.main-pricing {
+		height: auto;
 		padding: 0 0 100px 0;
 		flex-direction: column-reverse;
 		&-wrapper {

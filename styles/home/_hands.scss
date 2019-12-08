@@ -53,11 +53,13 @@
 
 @media all and (max-width: 1024px) {
     .hands {
+        height: 100vh;
     }    
 }
 
 @media all and (max-width: 767px) {
     .hands {
+        height: auto;
         padding: 100px 0 100px 0;
     }    
 }
