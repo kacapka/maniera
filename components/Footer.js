@@ -34,7 +34,7 @@ const Footer = () => {
 				</li>
 			</ul>
 			<ul className="footer-list footer-list--address">
-				<li>Maniera Nail & Spa Bar</li>
+				<li>Manièra Nail & Face Bar</li>
 				<li>Mokotowska 39, Warszawa</li>
 				<li>tel. 22 628 39 39</li>
 			</ul>
