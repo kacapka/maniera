@@ -8,13 +8,15 @@ const Contact = () => {
         link: "https://www.moment.pl/maniera-nail-bar",
         text: "REZERWACJA ONLINE",
         internal: false,
-        isLight: true
+        isLight: true,
+        className: 'button-wrapper--violet'
     }
     const buttonPropsBottom = {
         link: "/faq",
         text: "faq",
         internal: true,
-        isLight: true
+        isLight: true,
+        className: 'button-wrapper--violet'
     }
 
     const buttonTop = isMobileOrTablet ? <LinkBoxMobile {...buttonPropsTop} /> : <LinkBox {...buttonPropsTop} />;

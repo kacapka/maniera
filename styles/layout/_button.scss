@@ -23,6 +23,16 @@
     }
 }
 
+.button-wrapper--mint:hover {
+	color: #E7ECE7;
+}
+.button-wrapper--violet:hover {
+	color: #473B4D;
+}
+.button-wrapper--beige:hover {
+	color: #E9E4D8;
+}
+
 .button-wrapper:before, .button-wrapper:after {
 	content: '';
 	position: absolute;	
@@ -31,12 +41,6 @@
 }
 
 .button-wrapper:hover {
-	color: #dcccb4; 
-	transition-delay: .6s;
-}
-
-.button-wrapper--light:hover {
-	color: #000;
 	transition-delay: .6s;
 }
 

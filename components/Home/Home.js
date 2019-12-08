@@ -1,4 +1,4 @@
-import { Fragment, createContext } from "react";
+import { Fragment } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Hero from "./Hero";
 import Instagram from "./Instagram";
@@ -14,7 +14,6 @@ import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
 import LICENSE_KEY from '../../data/config';
 
-export const FpContext = createContext({});
 
 const Home = () => {
 	const { isMobile } = useMedia();
@@ -40,14 +39,10 @@ const Home = () => {
 				<ReactFullpage
 					licenseKey={LICENSE_KEY}
 					navigation
-					fadingEffect
-					onLeave={(origin, destination, direction) => console.log(origin, destination, direction)}
 					render={({ state, fullpageApi }) =>
 						console.log("") || (
 							<ReactFullpage.Wrapper>
-								<FpContext.Provider value={null}>
-									{components}
-								</FpContext.Provider>
+								{components}
 							</ReactFullpage.Wrapper>
 						)
 					}

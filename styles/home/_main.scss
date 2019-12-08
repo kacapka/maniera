@@ -16,10 +16,28 @@
 	}
 }
 
+@keyframes mainAnimBottom {
+	0% {
+		transform: translateX(180px);
+		opacity: 0;
+		visibility: 0;
+	}
+	50% {
+		transform: translateX(180px);
+		opacity: 0;
+		visibility: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+		visibility: 1;
+	}
+}
+
 .main {
 	height: 100vh;
 	width: 100%;
-	background-color: #dcccb4;
+	background-color: #E9E4D8;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,6 +59,9 @@
 		margin-left: 165px;
 		transition: opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0s;
 		animation: 2s mainAnim;
+		&__bottom {
+			animation: 3s mainAnimBottom;	
+		}
 	}
 }
 
@@ -82,11 +103,36 @@
 	@keyframes mainAnim {
 		0% {
 			transform: translateX(100px);
-			opacity: .3;
+			opacity: 0;
+			visibility: 0;
+		}
+		20% {
+			transform: translateX(100px);
+			opacity: 0;
+			visibility: 0;
 		}
 		100% {
 			opacity: 1;
-			transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+			transform: translateX(0);
+			visibility: 1;
+		}
+	}
+	
+	@keyframes mainAnimBottom {
+		0% {
+			transform: translateX(100px);
+			opacity: 0;
+			visibility: 0;
+		}
+		50% {
+			transform: translateX(100px);
+			opacity: 0;
+			visibility: 0;
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+			visibility: 1;
 		}
 	}
 	.main {
@@ -99,6 +145,10 @@
 			line-height: 60px;
 			align-self: center;
 			margin-left: 0;
+			animation: 2s mainAnim;
+			&__bottom {
+				animation: 2.5s mainAnimBottom;	
+			}
 		}
 	}
 }
@@ -106,7 +156,7 @@
 @media all and (max-width: 500px) {
 	.main {
 		background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_main_mobile_small.jpg');
-		padding: 0 0 85px 0;
+		// padding: 0 0 7px 0;
 		&-title {
 			font-size: 50px;
 			line-height: 55px;

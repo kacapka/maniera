@@ -1,15 +1,32 @@
 .wine {
     width: 100%;
 	height: 100%;
-	background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_wine.JPG');
-	background-position: center;
+	background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/prosecco.jpg');
+	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media all and (max-width: 1366px) {
+
+}
+
+@media all and (max-width: 1024px) {
+
 }
 
 @media all and (max-width: 767px) {
 	.wine {
-		background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_wine_mobile.jpg');
+		height: 100vh;
+		background-size: cover;
+	}	
+}
+
+@media all and (max-width: 500px) {
+	.wine {
 		height: 100vh;
 		background-size: cover;
 	}	

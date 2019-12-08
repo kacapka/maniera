@@ -5,16 +5,8 @@ import Nav from "../Nav";
 import useMedia from '../MediaQuery/MediaQuery';
 
 const Main = () => {
-	const [isTitle, setIsTitle] = useState(false);
 	const { isMobileOrTablet } = useMedia();
-
-	useEffect(() => {
-		let timer;
-		if (!isMobileOrTablet) {
-			timer = setTimeout(() => setIsTitle(true), 500);
-		}
-		return () => clearTimeout(timer);
-	}, []);
+	console.log(isMobileOrTablet);
 
 	return (
 		<section className="section">

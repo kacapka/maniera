@@ -8,7 +8,8 @@ const Pricing = () => {
 	const buttonProps = {
 		link: "/pricing",
 		text: "sprawdź nasze ceny",
-		internal: true
+		internal: true,
+		className: 'button-wrapper--mint'
 	}
 
 	return (

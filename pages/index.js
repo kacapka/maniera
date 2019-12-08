@@ -13,7 +13,7 @@ export default () => {
 	const { isMobileOrTablet } = useMedia();
 	return (
 		<Fragment>
-			<Head title="Maniera" />
+			<Head title="Manièra" />
 			{isMobileOrTablet && <NavMobile />}
 			<Home />
 		</Fragment>

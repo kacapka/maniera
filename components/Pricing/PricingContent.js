@@ -15,7 +15,7 @@ const PricingContent = () => {
         text: 'umów wizytę',
         link: "https://www.moment.pl/maniera-nail-bar",
         internal: false,
-        className: "pricing-button"
+        className: "pricing-button button-wrapper--beige"
     }
 
     return (

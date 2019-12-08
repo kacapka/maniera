@@ -21,7 +21,8 @@ const Nails = () => {
     const buttonProps = {
         link: "https://www.moment.pl/maniera-nail-bar",
         text: "umów wizytę",
-        internal: false
+        internal: false,
+        className: 'button-wrapper--mint'
     }
 
     const renderDesktopSlider = () => {
