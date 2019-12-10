@@ -48,6 +48,8 @@ const Head = props => (
 
 		<meta property="og:title" content="Maniera" />
 
+		<meta name="google-site-verification" content="sXaAUXlMVJRJLB7enpyrDeH_Tedgvf3gLXAJHL7VFv8" />
+
 		<link rel="stylesheet" href="https://use.typekit.net/fjn7dcc.css"></link>
 	</NextHead>
 );
