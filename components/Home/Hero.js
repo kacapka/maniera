@@ -14,7 +14,7 @@ const Hero = () => {
 				<Fade bottom>
 					<p className="hero-text hero-text__bottom">
 						<span className="hero-text--italic">Odwiedź Manièrę</span> <br />
-						z przyjaciółką, mamą, siostrą, lub mężem.
+						z przyjaciółką, mamą, siostrą lub mężem.
 					</p>
 				</Fade>
 			</div>
