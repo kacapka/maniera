@@ -13,10 +13,11 @@ import Phone from "./Phone";
 import Contact from "./Contact";
 import useMedia from "../MediaQuery/MediaQuery";
 import LICENSE_KEY from '../../data/config';
-
+import useIE from '../../helpers/ie';
 
 const Home = () => {
 	const { isMobileOrTablet } = useMedia();
+	const isIE = useIE();
 	const components = (
 		<>
 			<Main />
@@ -35,7 +36,7 @@ const Home = () => {
 
 	return (
 		<Fragment>
-			{isMobileOrTablet ? components : (
+			{isMobileOrTablet || isIE ? components : (
 				<ReactFullpage
 					licenseKey={LICENSE_KEY}
 					navigation
