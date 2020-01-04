@@ -11,15 +11,17 @@ import PricingContent from "../components/Pricing/PricingContent";
 import useMedia from '../components/MediaQuery/MediaQuery';
 import NavMobile from "../components/NavMobile";
 
+import Container from '../components/Container';
+
 export default () => {
 	const { isMobileOrTablet } = useMedia();
 	return (
-		<Fragment>
+		<Container>
 			<Head title="Manièra - Cennik" />
 			{isMobileOrTablet && <NavMobile />}
 			<PricingHero />
 			<PricingContent />
 			<Footer />
-		</Fragment>
+		</Container>
 	);
 };

@@ -1,29 +1,26 @@
 import Fade from 'react-reveal/Fade';
 import useMedia from '../MediaQuery/MediaQuery';
+import useTranslate from '../Translations/useTranslate';
 
 const Services = () => {
 	const { isTabletOrMobile } = useMedia();
+	const trans = useTranslate('services');
+
 	return (
 		<section className="section">
 			<div className="services">
 				<Fade bottom>
-					<h2 className="services-title">Zajmiemy się Tobą.</h2>
+					<h2 className="services-title">{trans.title}</h2>
 				</Fade>
-
 				<div className="services-wrapper">
 					<Fade bottom>
 						<div className="services-item">
 							<div className="services-item__line" />
 							<h3 className="services-item__title">
-								Stylizacja paznokci
+								{trans.subtitleLeft}
 							</h3>
 							<p className="services-item__desc">
-								Wykonujemy stylistykę paznokci
-								naturalnych oraz przedłużanych.
-								U nas umówisz się na manicure japoński,
-								SPA, a także hybrydowy i żelowy.
-								Możesz być pewna, że używamy produktów
-								najwyższej jakości.
+								{trans.descLeft}
 							</p>
 						</div>
 					</Fade>
@@ -31,13 +28,10 @@ const Services = () => {
 						<div className="services-item">
 							<div className="services-item__line" />
 							<h3 className="services-item__title">
-								Stylizacja rzęs
+								{trans.subtitleMiddle}
 							</h3>
 							<p className="services-item__desc">
-								Oferujemy przedłużanie rzęs metodami
-								1:1, 2:1 oraz objętościowymi big volume.
-								Połóż się wygodnie i pozwól naszym
-								stylistkom działać cuda.
+								{trans.descMiddle}
 							</p>
 						</div>
 					</Fade>
@@ -45,23 +39,17 @@ const Services = () => {
 						<div className="services-item">
 							<div className="services-item__line" />
 							<h3 className="services-item__title">
-								Zabiegi kosmetyczne
+								{trans.subtitleRight}
 							</h3>
 							<p className="services-item__desc">
-								Nasz gabinet kosmetyczny oferuje gamę
-								zabiegów pielęgnacyjnych przy użyciu
-								luksusowych preparatów marki Sothys,
-								a także urządzeń najnowszej generacji
-								Hydrafacial oraz Geneo+.
+								{trans.descRight}
 							</p>
 						</div>
 					</Fade>
 				</div>
-
 				<Fade bottom delay={isTabletOrMobile ? 0 : 400}>
 					<h4 className="services-info">
-						Dbamy o Twoje bezpieczeństwo – używamy tylko atestowanych
-						urządzeń i narzędzi.
+						{trans.bottom}
 					</h4>
 				</Fade>
 			</div>

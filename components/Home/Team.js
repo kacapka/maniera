@@ -1,6 +1,9 @@
 import Fade from 'react-reveal/Fade';
+import useTranslate from '../Translations/useTranslate';
 
 const Team = () => {
+    const trans = useTranslate('team');
+
     return (
         <section className="section">
             <div className="team">
@@ -10,12 +13,9 @@ const Team = () => {
                 <Fade bottom cascade delay={200}>
                     <div className="team-info">
                         <p className="team-info__name">MAGDALENA</p>
-                        <p className="team-info__role">Główna konspiratorka</p>
+                        <p className="team-info__role">{trans.role}</p>
                         <p className="team-info__desc">
-                            Zawsze trochę zaganiana i roztargniona,
-                            ale z ręką na pulsie. Ma milion pomysłów
-                            na minutę, uwielbia wyzwania, a przy tym
-                            wszystkim towarzyszy jej słodki piesek Tony.
+                            {trans.desc}
                         </p>
                     </div>
                 </Fade>

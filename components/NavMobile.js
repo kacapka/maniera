@@ -1,10 +1,14 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useContext } from 'react';
 import Link from "next/link";
 import classnames from 'classnames';
 import navImg from '../static/ham_circle.png';
+import useTranslate from './Translations/useTranslate';
+import LangContext from './Context/langContext';
 
 const NavMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { lang, setLang } = useContext(LangContext);
+    const trans = useTranslate('nav');
 
     const toggleNav = () => setIsOpen(prev => !prev);
 
@@ -23,14 +27,14 @@ const NavMobile = () => {
                             href="https://www.moment.pl/maniera-nail-bar"
                             target="_blank"
                         >
-                            UMÓW WIZYTĘ
+                            {trans.book}
                         </a>
                     </li>
                     <li className="nav-mobile__line"></li>
                     <li>
                         <Link href="/pricing">
                             <a>
-                                CENNIK
+                                {trans.pricing}
                             </a>
                         </Link>
                     </li>
@@ -41,6 +45,12 @@ const NavMobile = () => {
                                 FAQ
                             </a>
                         </Link>
+                    </li>
+                    <li className="nav-mobile__line"></li>
+                    <li onClick={setLang}>
+                        <span>
+                            {lang === 'pl' ? 'en' : 'pl'}
+                        </span>
                     </li>
                 </ul>
             </div>

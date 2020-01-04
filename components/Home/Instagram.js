@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Footer from "../Footer";
 import useMedia from '../MediaQuery/MediaQuery';
 import Slider from "../Slider";
+import useTranslate from '../Translations/useTranslate';
 
 import axios from 'axios';
 
@@ -55,6 +56,8 @@ const Instagram = () => {
 	const [igPhotos, setIgPhotos] = useState(defaultPhotos);
 	const [error, setError] = useState(false);
 
+	const trans = useTranslate('instagram');
+
 	useEffect(() => {
 		fetchPhotos();
 	}, []);
@@ -100,7 +103,7 @@ const Instagram = () => {
 		<section className="section">
 			<div className="instagram">
 				<div className="instagram-wrapper">
-					<p className="instagram-title">- zainspiruj się -</p>
+					<p className="instagram-title">- {trans.title} -</p>
 					<p className="instagram-text">Follow us <a href="https://www.instagram.com/manieranailbar/?hl=pl" target="_blank">@manieranailbar</a></p>
 					<div className="instagram-photos">
 						{renderPhotos()}

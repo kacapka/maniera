@@ -1,8 +1,15 @@
+import { useContext } from 'react';
 import Link from "next/link";
 import classnames from 'classnames';
 import InnerLink from "./InnerLink";
+import useTranslate from './Translations/useTranslate';
+
+import LangContext from './Context/langContext';
 
 const Nav = ({ isBlack }) => {
+	const { lang, setLang } = useContext(LangContext);
+	const trans = useTranslate('nav');
+
 	return (
 		<nav>
 			<ul>
@@ -12,13 +19,13 @@ const Nav = ({ isBlack }) => {
 						target="_blank"
 						className={classnames({ 'black': isBlack })}
 					>
-						<InnerLink text='UMÓW WIZYTĘ' />
+						<InnerLink text={trans.book} />
 					</a>
 				</li>
 				<li>
 					<Link href="/pricing">
 						<a className={classnames({ 'black': isBlack })}>
-							<InnerLink text='CENNIK' />
+							<InnerLink text={trans.pricing} />
 						</a>
 					</Link>
 				</li>
@@ -28,6 +35,11 @@ const Nav = ({ isBlack }) => {
 							<InnerLink text='FAQ' />
 						</a>
 					</Link>
+				</li>
+				<li onClick={setLang}>
+					<span>
+						<InnerLink text={lang === 'pl' ? 'en' : 'pl'} />
+					</span>
 				</li>
 			</ul>
 		</nav>

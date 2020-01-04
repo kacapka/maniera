@@ -11,15 +11,17 @@ import FaqContent from "../components/Faq/FaqContent";
 import useMedia from '../components/MediaQuery/MediaQuery';
 import NavMobile from "../components/NavMobile";
 
+import Container from '../components/Container';
+
 export default () => {
 	const { isMobileOrTablet } = useMedia();
 	return (
-		<Fragment>
+		<Container>
 			<Head title="Manièra - Faq" />
 			{isMobileOrTablet && <NavMobile />}
 			<FaqHero />
 			<FaqContent />
 			<Footer />
-		</Fragment>
+		</Container>
 	);
 };

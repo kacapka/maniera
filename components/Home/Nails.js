@@ -3,6 +3,7 @@ import { LinkBox, LinkBoxMobile } from "../LinkBox";
 import useMedia from '../MediaQuery/MediaQuery';
 import Slider from '../Slider';
 import Fade from 'react-reveal/Fade';
+import useTranslate from '../Translations/useTranslate';
 
 import nail1 from "../../static/nails/nail1.png";
 import nail2 from "../../static/nails/nail2.png";
@@ -17,10 +18,11 @@ const images = [
 
 const Nails = () => {
     const { isMobileOrTablet } = useMedia();
+    const trans = useTranslate('nails');
 
     const buttonProps = {
         link: "https://www.moment.pl/maniera-nail-bar",
-        text: "umów wizytę",
+        text: trans.button,
         internal: false,
         className: 'button-wrapper--mint'
     }
@@ -62,7 +64,7 @@ const Nails = () => {
                     <p className="nails-title">- STYLED BY MANIERA -</p>
                 </Fade>
                 <Fade bottom>
-                    <h2 className="nails-subtitle">Śledzimy najnowsze trendy.</h2>
+                    <h2 className="nails-subtitle">{trans.subtitle}</h2>
                 </Fade>
                 <Fade bottom delay={200}>
                     <div className="nails-wrapper">

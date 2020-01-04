@@ -1,7 +1,10 @@
 import Link from "next/link";
 import InnerLink from "./InnerLink";
+import useTranslate from './Translations/useTranslate';
 
 const Footer = () => {
+	const trans = useTranslate('nav');
+
 	return (
 		<footer className="footer">
 			<ul className="footer-list">
@@ -10,18 +13,18 @@ const Footer = () => {
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 					>
-						<InnerLink text='UMÓW WIZYTĘ' />
+						<InnerLink text={trans.book} />
 					</a>
 				</li>
 				{/* <li>
 					<Link href="/pricing">
-						<a>NASZ ZESPÓŁ</a>
+						<InnerLink text={trans.team} />
 					</Link>
 				</li> */}
 				<li>
 					<Link href="/pricing">
 						<a>
-							<	InnerLink text='CENNIK' />
+							<InnerLink text={trans.pricing} />
 						</a>
 					</Link>
 				</li>
@@ -36,7 +39,7 @@ const Footer = () => {
 			<ul className="footer-list footer-list--address">
 				<li>Manièra Nail & Face Bar</li>
 				<li>Mokotowska 39, Warszawa</li>
-				<li>tel. 22 628 39 39</li>
+				<li>{trans.phone} 22 628 39 39</li>
 			</ul>
 			<ul className="footer-list">
 				<li className="footer-list__follow">FOLLOW US</li>
@@ -68,7 +71,7 @@ const Footer = () => {
 			<div className="footer-authors">
 				{/* <p className="footer-authors__text">realizacja:&nbsp;</p> */}
 				<div>
-					realizacja:&nbsp;
+					{trans.madeBy}:&nbsp;
 					<a href="https://www.instagram.com/domi.suszek/" target="_blank" className="footer-authors__text">Domi.Suszek </a>
 					<a href="" target="_blank" className="footer-authors__text">J.Gostkiewicz </a>
 					<a href="https://www.instagram.com/_kacapka/" target="_blank" className="footer-authors__text">W.Urbański</a>

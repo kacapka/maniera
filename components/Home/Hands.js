@@ -1,11 +1,12 @@
 import Circle from '../Circle';
+import useTranslate from '../Translations/useTranslate';
 
 const Hands = () => {
+    const trans = useTranslate('hands');
     return (
         <section className="section">
             <div className="hands">
-                <Circle text="Twój komfort i perfekcyjna jakość są dla nas najważniejsze." />
-                {/* <div className="hands-image" /> */}
+                <Circle text={trans.circle} />
             </div>
         </section>
     )
