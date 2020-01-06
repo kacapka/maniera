@@ -32,6 +32,14 @@ const NavMobile = () => {
                     </li>
                     <li className="nav-mobile__line"></li>
                     <li>
+                        <Link href="/team">
+                            <a>
+                                {trans.team}
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="nav-mobile__line"></li>
+                    <li>
                         <Link href="/pricing">
                             <a>
                                 {trans.pricing}

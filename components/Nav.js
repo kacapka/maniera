@@ -23,6 +23,13 @@ const Nav = ({ isBlack }) => {
 					</a>
 				</li>
 				<li>
+					<Link href="/team">
+						<a className={classnames({ 'black': isBlack })}>
+							<InnerLink text={trans.team} />
+						</a>
+					</Link>
+				</li>
+				<li>
 					<Link href="/pricing">
 						<a className={classnames({ 'black': isBlack })}>
 							<InnerLink text={trans.pricing} />
@@ -37,7 +44,7 @@ const Nav = ({ isBlack }) => {
 					</Link>
 				</li>
 				<li onClick={setLang}>
-					<span>
+					<span className={classnames({ 'black': isBlack })}>
 						<InnerLink text={lang === 'pl' ? 'en' : 'pl'} />
 					</span>
 				</li>
