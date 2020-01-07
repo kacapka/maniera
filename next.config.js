@@ -17,7 +17,8 @@ module.exports = withImages(
 			return {
 				"/": { page: "/" },
 				"/faq": { page: "/faq" },
-				"/pricing": { page: "/pricing" }
+				"/pricing": { page: "/pricing" },
+				"/team": { page: "/team" }
 			};
 		}
 	})

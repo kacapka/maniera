@@ -2,9 +2,9 @@
     &-content {
         margin: 0 auto;
         width: 1260px;
-        display: flex;
         flex-wrap: wrap;
         padding-top: 100px;
+        display: flex;
         justify-content: center;
     }
     &-member {
@@ -37,7 +37,6 @@
             margin: 0 15px 200px 15px;
             width: 300px;
             &__image {
-                // width: 300px;
             }
             &__name {
                 font-size: 32px;

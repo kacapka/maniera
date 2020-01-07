@@ -14,8 +14,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		position: relative;
-		top: 50px;
+		padding-top: 50px;
 	}
 	&__image {
 		width: 300px;
@@ -39,7 +38,7 @@
 @media all and (min-width: 1680px) {
 	.team-hero {
 		&__wrap {
-			top: 100px;
+			padding-top: 100px;
 		}
 		&__image {
 			width: 400px;
@@ -66,7 +65,7 @@
 @media all and (max-width: 1024px) {
 	.team-hero {
 		&__wrap {
-			// top: 0;
+			padding-top: 0;
 		}
 		&__image {
 			width: 250px;
@@ -88,8 +87,7 @@
 @media all and (max-width: 767px) {
 	.team-hero {
 		&__wrap {
-			top: 0;
-			padding-top: 150px;
+			padding-top: 70px;
 		}
 		&__image {
 			width: 190px;
@@ -103,7 +101,9 @@
 
 @media all and (max-width: 500px) {
 	.team-hero {
+		height: auto;
 		&__wrap {
+			padding-top: 120px;
 			flex-direction: column;
 		}
 		&__image {
