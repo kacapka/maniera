@@ -15,7 +15,7 @@ export default () => {
     const { isMobileOrTablet } = useMedia();
     return (
         <Container>
-            <Head title="Manièra - nasz zespół" />
+            <Head title="Manièra - Nasz zespół" />
             {isMobileOrTablet && <NavMobile />}
             <TeamHero />
             <TeamContent />
