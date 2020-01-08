@@ -13,6 +13,7 @@ import TeamContent from "../components/Team/TeamContent";
 
 export default () => {
     const { isMobileOrTablet } = useMedia();
+
     return (
         <Container>
             <Head title="Manièra - Nasz zespół" />

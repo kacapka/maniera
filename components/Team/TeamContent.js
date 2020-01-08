@@ -1,13 +1,10 @@
 import { useContext, Fragment } from 'react';
 import TeamData from '../../data/team';
 import LangContext from '../Context/langContext';
-// import Fade from 'react-reveal/Fade';
-// import useMedia from '../MediaQuery/MediaQuery';
 import FadeIn from '../FadeIn';
 
 const TeamContent = () => {
     const { lang } = useContext(LangContext);
-    // const { isMobileOrTablet } = useMedia();
 
     const renderTeam = () => {
         return TeamData.slice(1, TeamData.length).map((member, i) => {
@@ -28,9 +25,9 @@ const TeamContent = () => {
     };
 
     return (
-        <div className="team-content">
+        <section className="team-content">
             {renderTeam()}
-        </div>
+        </section>
     );
 
 };
