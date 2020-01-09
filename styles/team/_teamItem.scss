@@ -1,19 +1,22 @@
 .team {
+    &-page {
+        padding-top: 300px;
+    }
     &-content {
         margin: 0 auto;
-        width: 1260px;
+        width: 1290px;
         flex-wrap: wrap;
-        padding-top: 100px;
         display: flex;
         justify-content: center;
     }
     &-member {
-        width: 360px;
-        margin: 0 30px 200px 30px;
+        width: 280px;
+        margin: 0 20px 200px 20px;
         margin-bottom: 200px;
         &__image {
             width: 100%;
             margin-bottom: 50px;
+            height: 410px;
         }
         &__name {
             @extend %robo-medium;
@@ -30,13 +33,17 @@
 
 @media all and (max-width: 1366px) {
     .team {
+        &-page {
+            padding-top: 200px;
+        }
         &-content {
             width: 1000px;
         }
         &-member {
             margin: 0 15px 200px 15px;
-            width: 300px;
+            width: 200px;
             &__image {
+                height: 300px;
             }
             &__name {
                 font-size: 32px;
@@ -58,6 +65,9 @@
         }
         &-member {
             width: 223px;
+            &__image {
+                height: 328px;
+            }
             &__name {
                 font-size: 28px;
                 margin-bottom: 30px;
@@ -74,6 +84,9 @@
         &-member {
             margin: 0 15px 150px 15px;
             width: 200px;
+            &__image {
+                height: 294px;
+            }
             &__name {
                 font-size: 25px;
                 margin-bottom: 20px;
@@ -84,13 +97,18 @@
 
 @media all and (max-width: 500px) {
     .team {
+        &-page {
+            padding-top: 120px;
+        }
         &-content {
             width: 280px;
-            margin-top: 100px;
         }
         &-member {
             margin: 0 0 100px 0;
             width: 280px;
+            &__image {
+                height: auto;
+            }
         }
     } 
 }

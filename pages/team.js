@@ -18,7 +18,7 @@ export default () => {
         <Container>
             <Head title="Manièra - Nasz zespół" />
             {isMobileOrTablet && <NavMobile />}
-            <TeamHero />
+            {/* <TeamHero /> */}
             <TeamContent />
             <Footer />
         </Container>

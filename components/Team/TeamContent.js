@@ -2,12 +2,16 @@ import { useContext, Fragment } from 'react';
 import TeamData from '../../data/team';
 import LangContext from '../Context/langContext';
 import FadeIn from '../FadeIn';
+import useMedia from '../MediaQuery/MediaQuery';
+import Nav from "../Nav";
+import Logo from "../Logo";
 
 const TeamContent = () => {
+    const { isMobileOrTablet } = useMedia();
     const { lang } = useContext(LangContext);
 
     const renderTeam = () => {
-        return TeamData.slice(1, TeamData.length).map((member, i) => {
+        return TeamData.map((member, i) => {
             return (
                 <FadeIn key={i}>
                     <div className="team-member">
@@ -25,8 +29,12 @@ const TeamContent = () => {
     };
 
     return (
-        <section className="team-content">
-            {renderTeam()}
+        <section className="team-page">
+            {!isMobileOrTablet && <Nav isBlack />}
+            <div className="team-content">
+                {renderTeam()}
+            </div>
+            <Logo isBlack />
         </section>
     );
 
