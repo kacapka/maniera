@@ -11,7 +11,7 @@ const PricingItem = ({ title, prices }) => {
         return prices.map(p => (
             <div className='pricing-item__wrapper' key={p.name[lang]}>
                 <p className='pricing-item__type'>{p.name[lang]}</p>
-                <p className='pricing-item__price'>{p.price[lang]}</p>
+                <p className='pricing-item__price'>{p.price}</p>
             </div>
         ))
     };
