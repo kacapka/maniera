@@ -10,7 +10,7 @@ const PricingContent = () => {
 
     const renderPrices = () => {
         return PRICES.map(price => {
-            return <PricingItem {...price} key={price.title} />
+            return <PricingItem {...price} key={price.title.pl} />
         });
     };
 

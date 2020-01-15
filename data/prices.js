@@ -1,410 +1,654 @@
 const PRICES = [
 	{
-		title: "Pielęgnacja rąk i stóp",
+		title: {
+			pl: "Pielęgnacja rąk i stóp",
+			en: 'Manicure / Pedicure Care'
+		},
 		prices: [
 			{
-				name: "1/2 Pedicure hybrydowy",
-				price: "150 zł"
-			},
-			{
-				name: "1/2 Pedicure klasyczny",
-				price: "100 zł"
-			},
-			{
-				name: "1/2 Pedicure Vinylux ",
-				price: "120 zł"
-			},
-			{
-				name: "FRENCH",
-				price: "15 zł"
-			},
-			{
-				name: "IBX",
-				price: "30 zł"
-			},
-			{
-				name: "Kwas na stopy",
-				price: "50 zł"
-			},
-			{
-				name: "Łatka",
-				price: "10 zł"
-			},
-			{
-				name: "Malowanie Paznokci Dłoni",
-				price: "30 zł"
-			},
-			{
-				name: "Malowanie Paznokci Dłoni HYBRYDA",
-				price: "70 zł"
-			},
-			{
-				name: "Malowanie Paznokci Dłoni VINYLUX",
-				price: "40 zł"
-			},
-			{
-				name: "Malowanie Paznokci Stóp",
-				price: "60 zł"
-			},
-			{
-				name: "Malowanie Paznokci Stóp HYBRYDA",
-				price: "90 zł"
-			},
-			{
-				name: "Malowanie Paznokci Stóp VINYLUX",
-				price: "70 zł"
-			},
-			{
-				name: "Manicure HYBRYDOWY",
+				name: {
+					pl: "Manicure HYBRYDOWY",
+					en: 'Manicure Gel / Hybrid'
+				},
 				price: "130 zł"
 			},
 			{
-				name: "Manicure Japoński",
-				price: "90 zł"
+				name: {
+					pl: "Manicure HYBRYDOWY - Styled by Maniera",
+					en: 'Manicure Hybrid – Styled by Maniera'
+				},
+				price: "140 - 160 zł"
 			},
 			{
-				name: "Manicure Klasyczny",
+				name: {
+					pl: "Manicure Klasyczny",
+					en: 'Manicure Classic'
+				},
 				price: "70 zł"
 			},
 			{
-				name: "Manicure Men",
-				price: "60 zł"
-			},
-			{
-				name: "Manicure Odżywczy / Bez Koloru",
-				price: "65 zł"
-			},
-			{
-				name: "Manicure/Pedicure HYBRYDA",
-				price: "310 zł"
-			},
-			{
-				name: "Manicure/Pedicure Odżywczy / Bez Koloru",
-				price: "185 zł"
-			},
-			{
-				name: "Manicure/Pedicure VINYLUX",
-				price: "310 zł"
-			},
-			{
-				name: "Manicure/Pedicure z Malowaniem",
-				price: "200 zł"
-			},
-			{
-				name: "Manicure SPA",
-				price: "100 zł"
-			},
-			{
-				name: "Manicure VINYLUX",
+				name: {
+					pl: "Manicure VINYLUX",
+					en: 'Manicure VINYLUX'
+				},
 				price: "80 zł"
 			},
 			{
-				name: "Nail Art",
-				price: "20 zł"
-			},
-			{
-				name: "Naprawa Paznokcia",
-				price: "20 zł"
-			},
-			{
-				name: "OPI Gel Break",
+				name: {
+					pl: "Manicure Japoński",
+					en: 'Manicure Japanese / P Shine'
+				},
 				price: "90 zł"
 			},
 			{
-				name: "Opiłowanie żelu",
-				price: "40 zł"
+				name: {
+					pl: "Manicure Men",
+					en: 'Manicure Men'
+				},
+				price: "60 zł"
 			},
 			{
-				name: "Pedicure HYBRYDA",
-				price: "180 zł"
-			},
-			{
-				name: "Pedicure Japoński",
-				price: "150 zł"
-			},
-			{
-				name: "Pedicure Klasyczny",
-				price: "130 zł"
-			},
-			{
-				name: "Pedicure Men",
-				price: "120 zł"
-			},
-			{
-				name: "Pedicure Odżywczy / Bez Koloru",
-				price: "120 zł"
-			},
-			{
-				name: "Pedicure SPA",
-				price: "180 zł"
-			},
-			{
-				name: "Pedicure VINYLUX ",
-				price: "150 zł"
-			},
-			{
-				name: "Peeling",
-				price: "15 zł"
-			},
-			{
-				name: "Piłowanie",
-				price: "20 zł"
-			},
-			{
-				name: "Piłowanie dłoni",
-				price: "15 zł"
-			},
-			{
-				name: "Uzupełnienie Żelu",
-				price: "160 zł"
-			},
-			{
-				name: "Uzupełnienie Żelu + Hybryda",
-				price: "210 zł"
-			},
-			{
-				name: "Założenie Żelu",
-				price: "200 zł"
-			},
-			{
-				name: "Założenie Żelu + Hybryda",
-				price: "250 zł"
-			},
-			{
-				name: "Zdjęcie Hybryda",
-				price: "20 zł"
-			},
-			{
-				name: "Zdjęcie Żelu/Akrylu",
-				price: "50 zł"
-			}
-		]
-	},
-	{
-		title: "Założenie/ Uzupełnienie Rzęsy",
-		prices: [
-			{
-				name: "Założenie Rzęsy",
-				price: "250 zł"
-			},
-			{
-				name: "Uzupełnienie Rzęsy 1:1",
-				price: "200 zł"
-			},
-			{
-				name: "Uzupełnienie Rzęsy 2:1 / 3:1",
-				price: "230 zł"
-			},
-			{
-				name: "Uzupełnienie Rzęsy 4:1 / 5:1",
-				price: "270 zł"
-			},
-			{
-				name: "Uzupełnienie Rzęsy Metoda Big Volume",
-				price: "270 - 360 zł"
-			},
-			{
-				name: "Założenie Rzęsy 2:1 / 3:1",
-				price: "280 zł"
-			},
-			{
-				name: "Założenie Rzęsy 4:1 / 5:1",
-				price: "300 zł"
-			},
-			{
-				name: "Założenie Rzęsy Metoda Big Volume",
-				price: "320 - 400 zł"
-			},
-			{
-				name: "Zdjęcie rzęs",
-				price: "50 zł"
-			},
-		]
-	},
-	{
-		title: "Stylizacja rzęs i brwi",
-		prices: [
-			{
-				name: "Komplet - Stylizacja Brwi + Henna Rzęs",
-				price: "90 zł"
-			},
-			{
-				name: "Nitkowanie + Stylizacja Systemem Brow Henna",
-				price: "95 zł"
-			},
-			{
-				name: "Henna Brwi",
-				price: "20 zł"
-			},
-			{
-				name: "Henna Rzęsy",
-				price: "25 zł"
-			},
-			{
-				name: "Koloryzacja Brwi (Brow Henna / SHIK)",
-				price: "50 zł"
-			},
-			{
-				name: "Laminacja Rzęs ",
-				price: "180 zł"
-			},
-			{
-				name: "Lifting Rzęs ",
-				price: "180 zł"
-			},
-			{
-				name: "Nitkowanie Brwi",
-				price: "50 zł"
-			},
-			{
-				name: "Nitkowanie + Stylizacja Brwi",
+				name: {
+					pl: "Manicure Odżywczy / Bez Koloru",
+					en: 'Manicure No Color'
+				},
 				price: "65 zł"
 			},
 			{
-				name: "Nitkowanie Twarzy + Stylizacja Brwi",
-				price: "120 zł"
-			},
-			{
-				name: "Regulacja Brwi Pęsetą",
-				price: "20 zł"
-			},
-			{
-				name: "Regulacja Brwi Pęsetą + Henna",
-				price: "50 zł"
-			},
-			{
-				name: "Regulacja Brwi Systemem LYCON",
-				price: "30 zł"
-			},
-			{
-				name: "Stylizacja Brwi metoda Brow Henna ",
-				price: "70 zł"
-			},
-		]
-	},
-	{
-		title: "Pielęgnacja twarzy",
-		prices: [
-			{
-				name: "Peeling Kawitacyjny + Oczyszczanie Manualne + Maska ",
-				price: "180 zł"
-			},
-			{
-				name: "SOTHYS Zabieg Silnie Nawilżający",
-				price: "260 zł"
-			},
-			{
-				name: "Atraumatyczne oczyszczenie twarzy A- nox Solution HL ",
-				price: "200 zł"
-			},
-			{
-				name: "Całoroczny zabieg Anti Age HL",
-				price: "230 zł"
-			},
-			{
-				name: "Całoroczny zabieg złuszczjący HL, na bazie naturalnych kwasów AHA stymulujących odnowę komórkową i regenerację skóry Alpha Peel HL",
-				price: "220 zł"
-			},
-			{
-				name: "Depilacja Twarzy - Wosk Metoda Bezpaskowa",
-				price: "30 - 70 zł"
-			},
-			{
-				name: "DODATEK Masaż Twarzy",
-				price: "120 zł"
-			},
-			{
-				name: "DODATEK Maseczka Algowa",
-				price: "50 zł"
-			},
-			{
-				name: "DODATEK Maseczka Sothys",
-				price: "60 zł"
-			},
-			{
-				name: "DODATEK Peeling Kawitacyjny",
-				price: "70 zł"
-			},
-			{
-				name: "Energia Młodości Intensywny Zabieg Odmładzający z Żeń-Szeniem Syberyjskim",
-				price: "350 zł"
-			},
-			{
-				name: "Manualne oczyszczenie twarzy A-Nox Solution HL",
-				price: "230 zł"
-			},
-			{
-				name: "Nitkowanie Twarz + Brwi",
+				name: {
+					pl: "Manicure SPA",
+					en: 'Manicure SPA'
+				},
 				price: "100 zł"
 			},
 			{
-				name: "Nitkowanie Twarzy",
-				price: "30 - 100 zł"
+				name: {
+					pl: "Pedicure HYBRYDA",
+					en: 'Pedicure Gel / Hybrid'
+				},
+				price: "180 zł"
 			},
 			{
-				name: "Pielęgnacja po typu skóry HL (demakijaż, white peel, masaż twarzy, szyi i dekoltu, krem)",
-				price: "170 zł"
+				name: {
+					pl: "Pedicure Klasyczny",
+					en: 'Pedicure Classic'
+				},
+				price: "130 zł"
 			},
 			{
-				name: "OTHYS Active Contour Zabieg na Okolice Oczu",
-				price: "190 zł"
+				name: {
+					pl: "Pedicure VINYLUX",
+					en: 'Pedicure VINYLUX'
+				},
+				price: "150 zł"
 			},
 			{
-				name: "SOTHYS Zabieg Wygładzajązy z Kwasem Glikolowym 30%",
-				price: "260 zł"
+				name: {
+					pl: "Pedicure Japoński",
+					en: 'edicure Japanese / P Shine'
+				},
+				price: "150 zł"
 			},
 			{
-				name: "Zabieg GENEO+ by Pollagen",
-				price: "300 - 450 zł"
+				name: {
+					pl: "Pedicure Men",
+					en: 'Pedicure Men'
+				},
+				price: "120 zł"
 			},
 			{
-				name: "Zabieg mocno ujędrniająco-liftingujący z lipopeptydami i fitoestrogenami Perfect Time HL",
-				price: "250 zł"
+				name: {
+					pl: "Pedicure SPA",
+					en: 'Pedicure SPA'
+				},
+				price: "180 zł"
 			},
 			{
-				name: "Zabieg Przygotowująco-Balansujący",
-				price: "240 zł"
-			},
-		]
-	},
-	{
-		title: "Pielęgnacja ciała",
-		prices: [
-			{
-				name: "Broda LYCON",
-				price: "40 zł"
+				name: {
+					pl: "Manicure/Pedicure HYBRYDA",
+					en: 'Manicure / Pedicure Hybrid'
+				},
+				price: "310 zł"
 			},
 			{
-				name: "Nos LYCON",
+				name: {
+					pl: "Manicure/Pedicure Klasyczny",
+					en: 'Manicure / Pedicure Classic'
+				},
+				price: "200 zł"
+			},
+			{
+				name: {
+					pl: "Manicure/Pedicure VINYLUX",
+					en: 'Manicure / Pedicure VINYLUX'
+				},
+				price: "230 zł"
+			},
+			{
+				name: {
+					pl: "Manicure/Pedicure Odżywczy",
+					en: 'Manicure / Pedicure No Color'
+				},
+				price: "185 zł"
+			},
+			{
+				name: {
+					pl: "Kwas na stopy",
+					en: 'Callus Removal'
+				},
+				price: "50 zł"
+			},
+			{
+				name: {
+					pl: "IBX",
+					en: 'IBX'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Łatka",
+					en: 'Łatka' // no translate
+				},
+				price: "10 zł"
+			},
+			{
+				name: {
+					pl: "Rekonstrukcja Paznokcia",
+					en: 'Nail Reconstruction'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Naprawa Paznokcia",
+					en: 'Naprawa Paznokcia' // no translate
+				},
 				price: "20 zł"
 			},
 			{
-				name: "Twarz LYCON",
-				price: "60 zł"
+				name: {
+					pl: "Nail Art",
+					en: 'Nail Art'
+				},
+				price: "20 - 50 zł"
 			},
 			{
-				name: "Wąsik LYCON",
-				price: "30 zł"
+				name: {
+					pl: "Założenie Żelu",
+					en: 'Gel Extensions'
+				},
+				price: "200 zł"
 			},
+			{
+				name: {
+					pl: "Założenie Żelu + OPI",
+					en: 'Gel Extensions + OPI'
+				},
+				price: "220 zł"
+			},
+			{
+				name: {
+					pl: "Założenie Żelu + HYBRYDA",
+					en: 'Gel Extensions + HYBRID'
+				},
+				price: "250 zł"
+			},
+			{
+				name: {
+					pl: "Założenie Żelu + VINYLUX",
+					en: 'Gel Extensions + VINYLUX'
+				},
+				price: "230 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Żelu",
+					en: 'Gel Filling'
+				},
+				price: "160 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Żelu + OPI",
+					en: 'Gel Filling + OPI'
+				},
+				price: "180 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Żelu + HYBRYDA",
+					en: 'Gel Filling + HYBRID'
+				},
+				price: "210 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Żelu + VINYLUX",
+					en: 'Gel Filling + VINYLUX'
+				},
+				price: "190 zł"
+			},
+			{
+				name: {
+					pl: "Zdjęcie Hybryda",
+					en: 'Removal HYBRID'
+				},
+				price: "20 zł"
+			},
+			{
+				name: {
+					pl: "Zdjęcie Żelu/Akrylu",
+					en: 'Removal Żel/Akryl'
+				},
+				price: "50 zł"
+			}
 		]
 	},
 	{
-		title: "Makijaż Permanentny",
+		title: {
+			pl: "Stylizacja Rzęs",
+			en: 'Eyelash Extensions'
+		},
 		prices: [
 			{
-				name: "Brwi Metoda Pudrowa",
+				name: {
+					pl: "Założenie Rzęsy 1:1",
+					en: 'Eyelash Extensions 1:1'
+				},
+				price: "250 zł"
+			},
+			{
+				name: {
+					pl: "Założenie Rzęsy 2:1/3:1",
+					en: 'Eyelash Extensions 2:1/3:1'
+				},
+				price: "280 zł"
+			},
+			{
+				name: {
+					pl: "Założenie Rzęsy 4:1/5:1",
+					en: 'Eyelash Extensions 4:1/5:1'
+				},
+				price: "300 zł"
+			},
+			{
+				name: {
+					pl: "Założenie Rzęsy Big Volume",
+					en: 'Eyelash Extensions Big Volume'
+				},
+				price: "320 - 400 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Rzęsy 1:1",
+					en: 'Eyelash Fill 1:1'
+				},
+				price: "200 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Rzęsy 2:1/3:1",
+					en: 'Eyelash Fill 2:1/3:1'
+				},
+				price: "230 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Rzęsy 4:1/5:1",
+					en: 'Eyelash Fill 4:1/5:1'
+				},
+				price: "270 zł"
+			},
+			{
+				name: {
+					pl: "Uzupełnienie Rzęsy Big Volume",
+					en: 'Eyelash Fill Big Volume'
+				},
+				price: "270 - 360 zł"
+			},
+			{
+				name: {
+					pl: "Zdjęcie rzęs",
+					en: 'Lash Removal '
+				},
+				price: "50 zł"
+			}
+		]
+	},
+	{
+		title: {
+			pl: "Stylizacja Oka",
+			en: 'Eye Styling'
+		},
+		prices: [
+			{
+				name: {
+					pl: "Henna Brwi (Reflectocil)",
+					en: 'Brow Henna (Reflectocil)'
+				},
+				price: "20 zł"
+			},
+			{
+				name: {
+					pl: "Henna Rzęsy",
+					en: 'Lash Henna'
+				},
+				price: "25 zł"
+			},
+			{
+				name: {
+					pl: "Stylizacja Brwi Brow Henna",
+					en: 'Brow Styling Brow Henna'
+				},
+				price: "70 zł"
+			},
+			{
+				name: {
+					pl: "Regulacja Brwi Systemem LYCON",
+					en: 'Brow Waxing LYCON'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Regulacja Brwi Pęsetą",
+					en: 'Brow Shape'
+				},
+				price: "20 zł"
+			},
+			{
+				name: {
+					pl: "Regulacja Brwi Pęsetą + Henna",
+					en: 'Brow Shape + Henna'
+				},
+				price: "40 zł"
+			},
+			{
+				name: {
+					pl: "Nitkowanie Brwi",
+					en: 'Brow Threading'
+				},
+				price: "50 zł"
+			},
+			{
+				name: {
+					pl: "Nitkowanie + Henna Brwi",
+					en: 'Brow Threading + Henna'
+				},
+				price: "65 zł"
+			},
+			{
+				name: {
+					pl: "Nitkowanie + Stylizacja Brow Henna",
+					en: 'Threading + Tint Brow Henna'
+				},
+				price: "95 zł"
+			},
+			{
+				name: {
+					pl: "Nitkowanie Twarzy + Henna Brwi",
+					en: 'Face Threading + Brow Henna'
+				},
+				price: "120 zł"
+			},
+			{
+				name: {
+					pl: "Lifting Rzęs",
+					en: 'Lash Lift'
+				},
+				price: "180 zł"
+			},
+			{
+				name: {
+					pl: "Laminacja Rzęs",
+					en: 'Lash Lift Extra'
+				},
+				price: "200 zł"
+			},
+			{
+				name: {
+					pl: "Komplet – Stylizacja Brwi + Henna Rzęs (Reflectocil)",
+					en: 'Combo – Brow Styling + Lash Tint (Reflectocil)'
+				},
+				price: "90 zł"
+			},
+			{
+				name: {
+					pl: "Komplet – Stylizacja Brow Henna + Regulacja LYCON",
+					en: 'Combo – Brow Styling Brow Henna + Wax LYCON'
+				},
+				price: "90 zł" // no price
+			}
+		]
+	},
+	{
+		title: {
+			pl: "Pielęgnacja twarzy",
+			en: 'Facials'
+		},
+		prices: [
+			{
+				name: {
+					pl: "Zabieg Geneo+ by Pollagen",
+					en: 'Geneo+ by Pollagen'
+				},
+				price: "350 - 450 zł"
+			},
+			{
+				name: {
+					pl: "Atraumatyczne oczyszczenie twarzy A- nox Solution HL",
+					en: 'Atraumatic facial cleansing A- nox Solution HL'
+				},
+				price: "200 zł"
+			},
+			{
+				name: {
+					pl: "Całoroczny zabieg złuszczający HL",
+					en: 'Year-Round Peel HL'
+				},
+				price: "220 zł"
+			},
+			{
+				name: {
+					pl: "Manualne oczyszczanie twarzy A-Nox Solution HL",
+					en: 'Manual Extractions A-Nox Solution HL'
+				},
+				price: "230 zł"
+			},
+			{
+				name: {
+					pl: "Pielęgnacja po typie skóry",
+					en: 'Skin Type Care'
+				},
+				price: "170 zł"
+			},
+			{
+				name: {
+					pl: "Zabieg mocno ujędrniająco-liftingujący z lipopeptydami i fitoestrogenami",
+					en: 'Firming and Lifting Care with lipopeptides'
+				},
+				price: "250 zł"
+			},
+			{
+				name: {
+					pl: "Zabieg przygotowująco-balansujący",
+					en: 'Skin Balancing Care'
+				},
+				price: "240 zł"
+			},
+			{
+				name: {
+					pl: "SOTHYS Zabieg wygładzający z kwasem glikolowym 30%",
+					en: 'SOTHYS Skin toning with glikol acid 30%'
+				},
+				price: "260 zł"
+			},
+			{
+				name: {
+					pl: "SOTHYS Active Contour na okolice oczu",
+					en: 'SOTHYS Active Contour for Eyes'
+				},
+				price: "190 zł"
+			},
+			{
+				name: {
+					pl: "SOTHYS Zabieg silnie nawilżający",
+					en: 'SOTHYS High Moisture Care'
+				},
+				price: "260 zł"
+			},
+			{
+				name: {
+					pl: "DODATEK Masaż Twarzy",
+					en: 'Add-on Skin Massage'
+				},
+				price: "120 zł"
+			},
+			{
+				name: {
+					pl: "DODATEK Maseczka Sothys",
+					en: 'Add-on Sothys Face Mask'
+				},
+				price: "60 zł"
+			},
+			{
+				name: {
+					pl: "DODATEK Peeling Kawitacyjny",
+					en: 'Add-on Cavitation Peel'
+				},
+				price: "70 zł"
+			}
+		]
+	},
+	{
+		title: {
+			pl: "Makijaż Permanentny",
+			en: 'Permanent Makeup (Prices include correction after 1 month)'
+		},
+		prices: [
+			{
+				name: {
+					pl: "Brwi Metoda Pudrowa",
+					en: 'Brows'
+				},
 				price: "900 zł"
 			},
 			{
-				name: "Oczy / zagęszczenie linii rzęs ",
+				name: {
+					pl: "Oczy / zagęszczenie linii rzęs ",
+					en: 'Eyes / thickening of the lash line'
+				},
 				price: "600 zł"
 			},
 			{
-				name: "Usta",
+				name: {
+					pl: "Usta",
+					en: 'Lips'
+				},
 				price: "900 zł"
 			}
 		]
-	}
+	},
+	{
+		title: {
+			pl: "Depilacja",
+			en: 'Waxing'
+		},
+		prices: [
+			{
+				name: {
+					pl: "Całe Ręce",
+					en: 'Arms'
+				},
+				price: "100 zł"
+			},
+			{
+				name: {
+					pl: "Całe Nogi",
+					en: 'Legs'
+				},
+				price: "150 zł"
+			},
+			{
+				name: {
+					pl: "Ręce",
+					en: 'Forearms'
+				},
+				price: "80 zł"
+			},
+			{
+				name: {
+					pl: "Łydki i kolana",
+					en: 'Calves and knees'
+				},
+				price: "80 zł"
+			},
+			{
+				name: {
+					pl: "Bikini Klasyczne LYCON",
+					en: 'Bikini Classic LYCON'
+				},
+				price: "80 zł"
+			},
+			{
+				name: {
+					pl: "Bikini Brazilian LYCON",
+					en: 'Bikini Brazilian LYCON'
+				},
+				price: "130 zł"
+			},
+			{
+				name: {
+					pl: "Twarz LYCON",
+					en: 'Face LYCON'
+				},
+				price: "70 zł"
+			},
+			{
+				name: {
+					pl: "Uszy LYCON",
+					en: 'Ears LYCON'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Wąsik LYCON",
+					en: 'Mustache LYCON'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Nos LYCON",
+					en: 'Nose LYCON'
+				},
+				price: "20 zł"
+			},
+			{
+				name: {
+					pl: "Policzki LYCON",
+					en: 'Cheeks LYCON'
+				},
+				price: "30 zł"
+			},
+			{
+				name: {
+					pl: "Broda LYCON",
+					en: 'Chin LYCON'
+				},
+				price: "40 zł"
+			},
+			{
+				name: {
+					pl: "Baczki LYCON",
+					en: 'Sideburns LYCON'
+				},
+				price: "30 zł"
+			}
+		]
+	},
 ];
 
 export default PRICES;
