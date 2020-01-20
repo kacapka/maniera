@@ -418,7 +418,7 @@ const PRICES = [
 					pl: "Komplet – Stylizacja Brow Henna + Regulacja LYCON",
 					en: 'Combo – Brow Styling Brow Henna + Wax LYCON'
 				},
-				price: "90 zł" // no price
+				price: "80 zł" // no price
 			}
 		]
 	},
