@@ -15,14 +15,14 @@ const TEAM = [
         },
         image: 'https://maniera.s3.eu-central-1.amazonaws.com/Daria.jpg'
     },
-    {
-        name: 'Dominika',
-        desc: {
-            pl: 'Stylizacja paznokci to jej wieloletnia pasja. Ciągle udoskonala swoje umiejętności i nie bez powodu nazywamy ją specjalistką od żelu. Słodka Maltanka Frania to największe szczęście Dominiki, i niezawodny temat do rozmów.',
-            en: 'Nails and everything that surrounds it have been her passion for years. Domi’s constantly working towards developing her skills and we don’t call her the gel queen for nothing! Sweet maltese Frania is her biggest joy in life and a foolproof conversation starter.'
-        },
-        image: 'https://maniera.s3.eu-central-1.amazonaws.com/Dominika.jpg'
-    },
+    // {
+    //     name: 'Dominika',
+    //     desc: {
+    //         pl: 'Stylizacja paznokci to jej wieloletnia pasja. Ciągle udoskonala swoje umiejętności i nie bez powodu nazywamy ją specjalistką od żelu. Słodka Maltanka Frania to największe szczęście Dominiki, i niezawodny temat do rozmów.',
+    //         en: 'Nails and everything that surrounds it have been her passion for years. Domi’s constantly working towards developing her skills and we don’t call her the gel queen for nothing! Sweet maltese Frania is her biggest joy in life and a foolproof conversation starter.'
+    //     },
+    //     image: 'https://maniera.s3.eu-central-1.amazonaws.com/Dominika.jpg'
+    // },
     {
         name: 'Malwina',
         desc: {
