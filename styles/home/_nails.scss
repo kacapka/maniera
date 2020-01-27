@@ -20,7 +20,7 @@
 	&-wrapper {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 100px;
+		margin-bottom: 40px;
 		align-items: center;
 		&__nail {
 			width: 71px;
@@ -31,6 +31,11 @@
 			width: 2px;
 			background: #000;
 			margin: 0 65px;
+		}
+		&__inner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
@@ -45,7 +50,7 @@
 			margin-bottom: 100px;
 		}
 		&-wrapper {
-			margin-bottom: 120px;
+			margin-bottom: 60px;
 			&__nail {
 				width: 95px;
 				height: 170px;
@@ -64,7 +69,7 @@
 			margin-bottom: 40px;
 		}
 		&-wrapper {
-			margin-bottom: 80px;
+			margin-bottom: 20px;
 			&__vl {
 				margin: 0 50px;
 			}
@@ -87,11 +92,6 @@
 			margin-bottom: 0;
 			&__vl {
 				margin: 0 50px;
-			}
-			&__inner {
-				display: flex;
-				align-items: center;
-				justify-content: center;
 			}
 		}
 	}	

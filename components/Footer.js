@@ -39,7 +39,7 @@ const Footer = () => {
 			<ul className="footer-list footer-list--address">
 				<li>Manièra Nail & Face Bar</li>
 				<li>Mokotowska 39, Warszawa</li>
-				<li>{trans.phone} 22 628 39 39</li>
+				<li>{trans.phone} +48 787 00 39 39</li>
 			</ul>
 			<ul className="footer-list">
 				<li className="footer-list__follow">FOLLOW US</li>

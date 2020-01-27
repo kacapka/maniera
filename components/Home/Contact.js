@@ -31,7 +31,7 @@ const Contact = () => {
                     <div className="contact-box contact-info">
                         <p className="contact-info__text">{trans.title}</p>
                         <p className="contact-info__address">Mokotowska 39, 00-551 Warszawa</p>
-                        <p className="contact-info__phone">{trans.book}: 22 628 39 39</p>
+                        <p className="contact-info__phone">{trans.book}: +48 787 00 39 39</p>
                         {buttonTop}
                     </div>
                 </Fade>

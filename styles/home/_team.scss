@@ -6,8 +6,9 @@
     align-items: center;
     justify-content: center;
     &-photo {
-        background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_magda.jpg');
-        background-position: center;
+        // background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/maniera_magda.jpg');
+        background-image: url('https://maniera.s3.eu-central-1.amazonaws.com/Magdalena.jpg');
+        background-position: 50% 20%; 
         background-size: cover;
         background-repeat: no-repeat;
         flex: 0 0 490px;
