@@ -178,63 +178,21 @@ const PRICES = [
 					pl: "Założenie Żelu",
 					en: 'Gel Extensions'
 				},
-				price: "200 zł"
-			},
-			{
-				name: {
-					pl: "Założenie Żelu + OPI",
-					en: 'Gel Extensions + OPI'
-				},
-				price: "220 zł"
-			},
-			{
-				name: {
-					pl: "Założenie Żelu + HYBRYDA",
-					en: 'Gel Extensions + HYBRID'
-				},
-				price: "250 zł"
-			},
-			{
-				name: {
-					pl: "Założenie Żelu + VINYLUX",
-					en: 'Gel Extensions + VINYLUX'
-				},
-				price: "230 zł"
+				price: "210 zł"
 			},
 			{
 				name: {
 					pl: "Uzupełnienie Żelu",
 					en: 'Gel Filling'
 				},
-				price: "160 zł"
-			},
-			{
-				name: {
-					pl: "Uzupełnienie Żelu + OPI",
-					en: 'Gel Filling + OPI'
-				},
 				price: "180 zł"
-			},
-			{
-				name: {
-					pl: "Uzupełnienie Żelu + HYBRYDA",
-					en: 'Gel Filling + HYBRID'
-				},
-				price: "210 zł"
-			},
-			{
-				name: {
-					pl: "Uzupełnienie Żelu + VINYLUX",
-					en: 'Gel Filling + VINYLUX'
-				},
-				price: "190 zł"
 			},
 			{
 				name: {
 					pl: "Zdjęcie Hybryda",
 					en: 'Removal HYBRID'
 				},
-				price: "20 zł"
+				price: "30 zł"
 			},
 			{
 				name: {
@@ -243,6 +201,49 @@ const PRICES = [
 				},
 				price: "50 zł"
 			}
+			// {
+			// 	name: {
+			// 		pl: "Założenie Żelu + OPI",
+			// 		en: 'Gel Extensions + OPI'
+			// 	},
+			// 	price: "220 zł"
+			// },
+			// {
+			// 	name: {
+			// 		pl: "Założenie Żelu + HYBRYDA",
+			// 		en: 'Gel Extensions + HYBRID'
+			// 	},
+			// 	price: "250 zł"
+			// },
+			// {
+			// 	name: {
+			// 		pl: "Założenie Żelu + VINYLUX",
+			// 		en: 'Gel Extensions + VINYLUX'
+			// 	},
+			// 	price: "230 zł"
+			// },
+
+			// {
+			// 	name: {
+			// 		pl: "Uzupełnienie Żelu + OPI",
+			// 		en: 'Gel Filling + OPI'
+			// 	},
+			// 	price: "180 zł"
+			// },
+			// {
+			// 	name: {
+			// 		pl: "Uzupełnienie Żelu + HYBRYDA",
+			// 		en: 'Gel Filling + HYBRID'
+			// 	},
+			// 	price: "210 zł"
+			// },
+			// {
+			// 	name: {
+			// 		pl: "Uzupełnienie Żelu + VINYLUX",
+			// 		en: 'Gel Filling + VINYLUX'
+			// 	},
+			// 	price: "190 zł"
+			// },
 		]
 	},
 	{
@@ -256,56 +257,56 @@ const PRICES = [
 					pl: "Założenie Rzęsy 1:1",
 					en: 'Eyelash Extensions 1:1'
 				},
-				price: "250 zł"
+				price: "200 zł"
 			},
 			{
 				name: {
 					pl: "Założenie Rzęsy 2:1/3:1",
 					en: 'Eyelash Extensions 2:1/3:1'
 				},
-				price: "280 zł"
+				price: "240 zł"
 			},
 			{
 				name: {
 					pl: "Założenie Rzęsy 4:1/5:1",
 					en: 'Eyelash Extensions 4:1/5:1'
 				},
-				price: "300 zł"
+				price: "260 zł"
 			},
 			{
 				name: {
 					pl: "Założenie Rzęsy Big Volume",
 					en: 'Eyelash Extensions Big Volume'
 				},
-				price: "320 - 400 zł"
+				price: "280 - 320 zł"
 			},
 			{
 				name: {
 					pl: "Uzupełnienie Rzęsy 1:1",
 					en: 'Eyelash Fill 1:1'
 				},
-				price: "200 zł"
+				price: "150 zł"
 			},
 			{
 				name: {
 					pl: "Uzupełnienie Rzęsy 2:1/3:1",
 					en: 'Eyelash Fill 2:1/3:1'
 				},
-				price: "230 zł"
+				price: "190 zł"
 			},
 			{
 				name: {
 					pl: "Uzupełnienie Rzęsy 4:1/5:1",
 					en: 'Eyelash Fill 4:1/5:1'
 				},
-				price: "270 zł"
+				price: "210 zł"
 			},
 			{
 				name: {
 					pl: "Uzupełnienie Rzęsy Big Volume",
 					en: 'Eyelash Fill Big Volume'
 				},
-				price: "270 - 360 zł"
+				price: "230 - 310 zł"
 			},
 			{
 				name: {
@@ -418,7 +419,7 @@ const PRICES = [
 					pl: "Komplet – Stylizacja Brow Henna + Regulacja LYCON",
 					en: 'Combo – Brow Styling Brow Henna + Wax LYCON'
 				},
-				price: "80 zł" // no price
+				price: "80 zł"
 			}
 		]
 	},
@@ -435,20 +436,20 @@ const PRICES = [
 				},
 				price: "350 - 450 zł"
 			},
-			{
-				name: {
-					pl: "Atraumatyczne oczyszczenie twarzy A- nox Solution HL",
-					en: 'Atraumatic facial cleansing A- nox Solution HL'
-				},
-				price: "200 zł"
-			},
-			{
-				name: {
-					pl: "Całoroczny zabieg złuszczający HL",
-					en: 'Year-Round Peel HL'
-				},
-				price: "220 zł"
-			},
+			// {
+			// 	name: {
+			// 		pl: "Atraumatyczne oczyszczenie twarzy A- nox Solution HL",
+			// 		en: 'Atraumatic facial cleansing A- nox Solution HL'
+			// 	},
+			// 	price: "230 zł"
+			// },
+			// {
+			// 	name: {
+			// 		pl: "Całoroczny zabieg złuszczający HL",
+			// 		en: 'Year-Round Peel HL'
+			// 	},
+			// 	price: "220 zł"
+			// },
 			{
 				name: {
 					pl: "Manualne oczyszczanie twarzy A-Nox Solution HL",
