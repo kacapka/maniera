@@ -35,7 +35,7 @@ const Modal = ({ closeModal }) => {
                         </p>
                         {isMobileOrTablet ? <LinkBoxMobile {...buttonProps} /> : <LinkBox {...buttonProps} />}
                         <div className="modal-image">
-                            {lang === "_pl" ? svg_pl : svg_en}
+                            {lang === "pl" ? svg_pl : svg_en}
                         </div>
                         <div className="modal-close" onClick={closeModal}>
                             <img src={navImg} className="modal-close__img" />
