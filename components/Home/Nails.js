@@ -97,10 +97,10 @@ const Nails = () => {
                     <img src={nailsMarzec[0]} alt="paznokieć" className="nails-wrapper__nail" />
                     <div className="nails-wrapper__vl" />
                     <img src={nailsMarzec[1]} alt="paznokieć" className="nails-wrapper__nail" />
+                    <div className="nails-wrapper__vl" />
+                    <img src={nailsMarzec[2]} alt="paznokieć" className="nails-wrapper__nail" />
                 </div>
                 <div className="nails-wrapper__inner">
-                    <img src={nailsMarzec[2]} alt="paznokieć" className="nails-wrapper__nail" />
-                    <div className="nails-wrapper__vl" />
                     <img src={nailsMarzec[3]} alt="paznokieć" className="nails-wrapper__nail" />
                     <div className="nails-wrapper__vl" />
                     <img src={nailsMarzec[4]} alt="paznokieć" className="nails-wrapper__nail" />
