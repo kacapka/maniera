@@ -16,12 +16,21 @@ const NavMobile = () => {
         <div>
             <div className="nav-burger" onClick={toggleNav}>
                 <img src={navImg} className="nav-burger__img" />
-                < div className={classnames("burger-inner", { open: isOpen })} />
+                <div className={classnames("burger-inner", { open: isOpen })} />
                 <div className={classnames("burger-inner", { open: isOpen })} />
                 <div className={classnames("burger-inner", { open: isOpen })} />
             </div>
             <div className={classnames("nav-mobile", { open: isOpen })}>
                 <ul>
+                    <li onClick={() => setIsOpen(false)}>
+                        <a
+                            href="https://maniera.shoplo.com/"
+                            target="_blank"
+                        >
+                            {trans.shop}
+                        </a>
+                    </li>
+                    <li className="nav-mobile__line"></li>
                     <li onClick={() => setIsOpen(false)}>
                         <a
                             href="https://www.moment.pl/maniera-nail-bar"

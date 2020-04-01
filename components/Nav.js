@@ -15,6 +15,15 @@ const Nav = ({ isBlack }) => {
 			<ul>
 				<li>
 					<a
+						href="https://maniera.shoplo.com/"
+						target="_blank"
+						className={classnames({ 'black': isBlack })}
+					>
+						<InnerLink text={trans.shop} />
+					</a>
+				</li>
+				<li>
+					<a
 						href="https://www.moment.pl/maniera-nail-bar"
 						target="_blank"
 						className={classnames({ 'black': isBlack })}
