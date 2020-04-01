@@ -17,12 +17,23 @@ import nailLuty2 from "../../static/nails/nailLuty2.png";
 import nailLuty3 from "../../static/nails/nailLuty3.png";
 
 
+import nailMarzec1 from "../../static/nails/marzec_1.png";
+import nailMarzec2 from "../../static/nails/marzec_2.png";
+import nailMarzec3 from "../../static/nails/marzec_3.png";
+import nailMarzec4 from "../../static/nails/marzec_4.png";
+import nailMarzec5 from "../../static/nails/marzec_5.png";
+
+
 const images = [
     nail1, nail2, nail3, nail4, nail5, nail6
 ];
 
 const nailsLuty = [
     nailLuty1, nailLuty2, nailLuty3
+];
+
+const nailsMarzec = [
+    nailMarzec1, nailMarzec2, nailMarzec3, nailMarzec4, nailMarzec5
 ];
 
 const Nails = () => {
@@ -47,9 +58,23 @@ const Nails = () => {
         });
     }
 
+    const renderNailsForMarzec = () => {
+        return nailsMarzec.map((nail, i) => {
+            return (
+                <Fragment key={i}>
+                    <img src={nail} alt="paznokieć" className="nails-wrapper__nail" />
+                    {i != nailsMarzec.length - 1 && <div className="nails-wrapper__vl" />}
+                </Fragment>
+            );
+        });
+    }
+
     const renderDesktopSlider = () => {
         return (
             <Slider>
+                <div className="nails-wrapper__inner">
+                    {renderNailsForMarzec()}
+                </div>
                 <div className="nails-wrapper__inner">
                     {renderNailsForLuty()}
                 </div>
@@ -68,6 +93,18 @@ const Nails = () => {
     const renderMobileSlider = () => {
         return (
             <Slider>
+                <div className="nails-wrapper__inner">
+                    <img src={nailsMarzec[0]} alt="paznokieć" className="nails-wrapper__nail" />
+                    <div className="nails-wrapper__vl" />
+                    <img src={nailsMarzec[1]} alt="paznokieć" className="nails-wrapper__nail" />
+                </div>
+                <div className="nails-wrapper__inner">
+                    <img src={nailsMarzec[2]} alt="paznokieć" className="nails-wrapper__nail" />
+                    <div className="nails-wrapper__vl" />
+                    <img src={nailsMarzec[3]} alt="paznokieć" className="nails-wrapper__nail" />
+                    <div className="nails-wrapper__vl" />
+                    <img src={nailsMarzec[4]} alt="paznokieć" className="nails-wrapper__nail" />
+                </div>
                 <div className="nails-wrapper__inner">
                     {renderNailsForLuty()}
                 </div>

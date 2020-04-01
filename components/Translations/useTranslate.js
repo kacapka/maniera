@@ -59,6 +59,7 @@ const translations = {
             title: 'zainspiruj się'
         },
         nav: {
+            shop: 'sklep',
             book: 'umów wizytę',
             pricing: 'cennik',
             team: 'zespół',
@@ -105,6 +106,12 @@ const translations = {
         pricingPage: {
             title: 'Cennik',
             button: 'Umów wizytę'
+        },
+        modal: {
+            textTop: 'Na razie nie spotkamy się na Mokotowskiej,',
+            textMiddle: "ale za to możecie odwiedzać nas",
+            textBottom: "w butiku online!",
+            button: "ZAPRASZAMY NA ZAKUPY"
         }
     },
 
@@ -157,6 +164,7 @@ const translations = {
             title: 'get inspired'
         },
         nav: {
+            shop: 'shop',
             book: 'book online',
             pricing: 'pricing',
             team: 'team',
@@ -203,6 +211,12 @@ const translations = {
         pricingPage: {
             title: 'Pricing',
             button: 'Book online'
+        },
+        modal: {
+            textTop: "While we can't meet on Mokotowska,",
+            textMiddle: "you can now visit our new online boutique!",
+            textBottom: null,
+            button: "CLICK HERE TO SHOP"
         }
     }
 
