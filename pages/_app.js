@@ -21,7 +21,7 @@ class MyApp extends App {
 
         return (
             <Container>
-                {this.state.isModal && <Modal closeModal={this.closeModal} />}
+                {/* {this.state.isModal && <Modal closeModal={this.closeModal} />} */}
                 <Component {...pageProps} />
             </Container>
         )
